@@ -1,0 +1,52 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "PerfectMosquitto",
+        "repositoryURL": "git@github.com:CSCIX65G/Perfect-Mosquitto.git",
+        "state": {
+          "branch": "master",
+          "revision": "0d79f6e1c2aed7e55fb47b8f6b243f5845f94b24",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "git@github.com:apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "8d31a0905c346a45c87773ad50862b5b3df8dff6",
+          "version": "0.0.4"
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "git@github.com:apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "74d7b91ceebc85daf387ebb206003f78813f71aa",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "git@github.com:apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "a27a07719ca785bcaca019a5b9fe1814b981b4a2",
+          "version": "2.15.0"
+        }
+      },
+      {
+        "package": "SwiftyGPIO",
+        "repositoryURL": "git@github.com:uraimo/SwiftyGPIO",
+        "state": {
+          "branch": "next_release",
+          "revision": "039941b53af4e8e3321650bc65aefe1f626d2251",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
