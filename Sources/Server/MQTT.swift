@@ -47,22 +47,18 @@ public struct DisplayMessage: Codable, Equatable, CustomStringConvertible {
 }
 
 public struct MQTT {
-    public static var messageThread: EventLoop?
-    static let worker = NIOThreadPool(numberOfThreads: 1)
     static var hostType: HostType = .rpi
 
     public static func startClient(
         _ eventLoop: EventLoop,
-        name: String = "Relay Client",
-        hostType: HostType,
         host: String,
         port: Int32
     ) -> EventLoopFuture<Void> {
-        MQTT.hostType = hostType
         let m = Mosquitto()
         m.OnMessage    = m.handleMessages()
         m.OnDisconnect = m.handle(disconnect:)
         m.OnConnect    = m.handle(connect:)
+        m.OnLog        = m.handle(logLevel:message:)
         
         do {
             logger.info("Connecting to MQTT server at: \(host):\(port)")
@@ -97,16 +93,20 @@ fileprivate extension Mosquitto {
             lastCall = now
             guard msg.topic == "relay" else { return }
             pin.direction = .output
+            logger.info("Turning off relay")
             pin.value = true
+            logger.info("Turned off relay")
             sleep(5)
+            logger.info("Turning on relay")
             pin.value = false
+            logger.info("Turned on relay")
         }
     }
     
     func handle(disconnect status: Mosquitto.ConnectionStatus) -> Void {
         guard status == .ELSE else { return }
         do {
-            logger.info("Reconnecting MQTT...")
+            logger.info("Reconnecting MQTT after status \(status)...")
             try reconnect(false)
         } catch {
             logger.error("Could not reconnect: \(error)")
@@ -121,5 +121,10 @@ fileprivate extension Mosquitto {
         } catch {
             logger.error("Unable to subscript to relay topic: \(error)")
         }
+    }
+    
+    func handle(logLevel: LogLevel, message: String) {
+        guard logLevel != .DEBUG else { return }
+        logger.info("\(message)")
     }
 }

@@ -1,0 +1,10 @@
+FROM scratch
+MAINTAINER Van Simmons <van.simmons@computecycles.com>
+
+VOLUME ["/lib", "/usr/lib"]
+
+COPY ./.build/armv7-unknown-linux-gnueabihf/debug/relaycontroller ./relaycontroller
+
+ENV LD_LIBRARY_PATH=/swift_runtime/usr/lib/swift/linux:/swift_runtime/usr/lib/arm-linux-gnueabihf:/swift_runtime/lib/arm-linux-gnueabihf
+ENTRYPOINT ["/lib/ld-linux-armhf.so.3"]
+CMD ["/relaycontroller", "--device", "rpi", "--host", "127.0.0.1", "--port", "1883"]

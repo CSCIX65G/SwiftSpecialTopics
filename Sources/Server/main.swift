@@ -2,10 +2,7 @@ import Logging
 import ArgumentParser
 import NIO
 import PerfectMosquitto
-
-private let eventLoops = MultiThreadedEventLoopGroup(numberOfThreads: 1)
-let logger = Logger(label: "net.playspots.PlayspotDisplayServer")
-
+import Foundation
 
 public enum HostType: ExpressibleByArgument {
     case rpi
@@ -22,6 +19,12 @@ public enum HostType: ExpressibleByArgument {
 
 
 struct Server: ParsableCommand {
+    @Argument(
+        default: "relaycontroller",
+        help: ArgumentHelp("handle different pi convention", valueName: "device")
+    )
+    var program: String
+    
     @Option(
         default: .rpi,
         help: ArgumentHelp("device type to run on", valueName: "device")
@@ -41,14 +44,15 @@ struct Server: ParsableCommand {
     var port: Int
 }
 
-let options = Server.parseOrExit()
+private let options = Server.parseOrExit()
+private let eventLoops = MultiThreadedEventLoopGroup(numberOfThreads: 1)
 
+let logger = Logger(label: "net.playspots.PlayspotRelayController")
 logger.info("Server starting")
-MQTT.messageThread = eventLoops.next()
 do {
+    MQTT.hostType = options.device
     try MQTT.startClient(
-        MQTT.messageThread!,
-        hostType: options.device,
+        eventLoops.next(),
         host: options.host,
         port: Int32(options.port)
     ).wait()

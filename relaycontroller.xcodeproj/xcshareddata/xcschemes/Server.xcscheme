@@ -64,7 +64,7 @@
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "localhost"
+            argument = "10.8.0.5"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

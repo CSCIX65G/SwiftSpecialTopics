@@ -294,6 +294,8 @@
 
 /* Begin PBXFileReference section */
 		FB506D2B242BDDD700EF6DFF /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
+		FB506D2E242C001000EF6DFF /* build-armv7.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-armv7.sh"; sourceTree = "<group>"; };
+		FB506D31242C006A00EF6DFF /* Dockerfile-armv7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Dockerfile-armv7"; sourceTree = "<group>"; };
 		OBJ_100 /* NIOAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOAny.swift; sourceTree = "<group>"; };
 		OBJ_101 /* NIOCloseOnErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOCloseOnErrorHandler.swift; sourceTree = "<group>"; };
 		OBJ_102 /* NIOThreadPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOThreadPool.swift; sourceTree = "<group>"; };
@@ -872,6 +874,8 @@
 			children = (
 				OBJ_188 /* README.md */,
 				OBJ_6 /* Package.swift */,
+				FB506D2E242C001000EF6DFF /* build-armv7.sh */,
+				FB506D31242C006A00EF6DFF /* Dockerfile-armv7 */,
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_11 /* Dependencies */,
