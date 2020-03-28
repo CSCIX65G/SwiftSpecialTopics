@@ -4,7 +4,6 @@ import NIO
 import PerfectMosquitto
 import Foundation
 import SwiftyGPIO
-import SQLite
 
 public enum HostType {
     case rpi

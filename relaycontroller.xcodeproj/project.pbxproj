@@ -22,7 +22,6 @@
 
 /* Begin PBXBuildFile section */
 		FB506D2C242BDDD700EF6DFF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D2B242BDDD700EF6DFF /* MQTT.swift */; };
-		FB506D34242D7D9200EF6DFF /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FB506D33242D7D9200EF6DFF /* SQLite */; };
 		FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */; };
 		FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D37242EB6C200EF6DFF /* ServerOptions.swift */; };
 		FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D39242EB6FE00EF6DFF /* RelayController.swift */; };
@@ -298,6 +297,13 @@
 			remoteGlobalIDString = "relaycontroller::Server";
 			remoteInfo = Server;
 		};
+		FBFEFB8E242FFFEF00E2ED92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "relaycontroller::Server";
+			remoteInfo = Server;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -446,7 +452,7 @@
 		OBJ_99 /* MulticastChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastChannel.swift; sourceTree = "<group>"; };
 		"PerfectMosquitto::PerfectMosquitto::Product" /* PerfectMosquitto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PerfectMosquitto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyGPIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"relaycontroller::Server::Product" /* Server */ = {isa = PBXFileReference; lastKnownFileType = text; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
+		"relaycontroller::Server::Product" /* Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
 		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"swift-log::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CNIOAtomics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -548,7 +554,6 @@
 				OBJ_389 /* SwiftyGPIO.framework in Frameworks */,
 				FB506D3D242F881200EF6DFF /* Overture in Frameworks */,
 				OBJ_390 /* PerfectMosquitto.framework in Frameworks */,
-				FB506D34242D7D9200EF6DFF /* SQLite in Frameworks */,
 				OBJ_391 /* ArgumentParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,6 +592,13 @@
 				FBFEFB85242FA8C300E2ED92 /* Info.plist */,
 			);
 			path = ServerTests;
+			sourceTree = "<group>";
+		};
+		FBFEFB8A242FFEAE00E2ED92 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		OBJ_10 /* Tests */ = {
@@ -937,6 +949,7 @@
 				OBJ_11 /* Dependencies */,
 				FBFEFB82242FA8C300E2ED92 /* ServerTests */,
 				OBJ_175 /* Products */,
+				FBFEFB8A242FFEAE00E2ED92 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1138,6 +1151,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				FBFEFB8F242FFFEF00E2ED92 /* PBXTargetDependency */,
 			);
 			name = ServerTests;
 			productName = ServerTests;
@@ -1227,7 +1241,6 @@
 			);
 			name = Server;
 			packageProductDependencies = (
-				FB506D33242D7D9200EF6DFF /* SQLite */,
 				FB506D3C242F881200EF6DFF /* Overture */,
 			);
 			productName = Server;
@@ -1458,7 +1471,6 @@
 				FB506D28242BDCC000EF6DFF /* XCRemoteSwiftPackageReference "swift-log" */,
 				FB506D29242BDCDF00EF6DFF /* XCRemoteSwiftPackageReference "Perfect-Mosquitto" */,
 				FB506D2A242BDD3300EF6DFF /* XCRemoteSwiftPackageReference "SwiftyGPIO" */,
-				FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */,
 				FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */,
 			);
 			productRefGroup = OBJ_175 /* Products */;
@@ -1760,6 +1772,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		FBFEFB8F242FFFEF00E2ED92 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "relaycontroller::Server" /* Server */;
+			targetProxy = FBFEFB8E242FFFEF00E2ED92 /* PBXContainerItemProxy */;
+		};
 		OBJ_346 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "swift-nio::CNIOSHA1" /* CNIOSHA1 */;
@@ -1897,6 +1914,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Mosquitto/Sources/cmosquitto",
+				);
 				INFOPLIST_FILE = ServerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1958,6 +1979,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/.build/checkouts/Perfect-Mosquitto/Sources/cmosquitto",
+				);
 				INFOPLIST_FILE = ServerTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2641,6 +2666,7 @@
 		OBJ_377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -2684,6 +2710,7 @@
 		OBJ_378 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -3123,14 +3150,6 @@
 				kind = branch;
 			};
 		};
-		FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:stephencelis/SQLite.swift";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.12.2;
-			};
-		};
 		FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:pointfreeco/swift-overture";
@@ -3142,11 +3161,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FB506D33242D7D9200EF6DFF /* SQLite */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */;
-			productName = SQLite;
-		};
 		FB506D3C242F881200EF6DFF /* Overture */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */;
