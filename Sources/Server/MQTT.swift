@@ -9,55 +9,19 @@ import Foundation
 import Logging
 import PerfectMosquitto
 import NIO
-import SwiftyGPIO
 
-public struct DisplayMessage: Codable, Equatable, CustomStringConvertible {
-    static let jsonDecoder = JSONDecoder()
-    
-    public static func decode(_ data: Data) -> DisplayMessage? {
-        try? Self.jsonDecoder.decode(DisplayMessage.self, from: data)
-    }
-
-    public let image: String
-    public let text: String
-    
-    public init(image: String = "Empty", text: String = "") {
-        self.image = image
-        self.text = text
-    }
-    
-    public init?(data: Data) {
-        guard let decoded = Self.decode(data) else { return nil }
-        self = decoded
-    }
-    
-    public var description: String { return "\"\(image)\")" }
-    
-    enum CodingKeys: String, CodingKey {
-        case image
-        case text
-    }
-
-    public init(from decoder: Decoder) throws {
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        self.image = try container.decodeIfPresent(String.self, forKey: .image) ?? "Empty"
-        self.text = try container.decodeIfPresent(String.self, forKey: .text) ?? ""
-    }
-
-}
-
-public struct MQTT {
-    static var hostType: HostType = .rpi
-
+struct MQTT {
     public static func startClient(
         _ eventLoop: EventLoop,
         host: String,
-        port: Int32
+        port: Int32,
+        messageHandlers: [MQTTMessaging.MessageProcessor],
+        errorHandler: @escaping (Error) -> Void
     ) -> EventLoopFuture<Void> {
         let m = Mosquitto()
-        m.OnMessage    = m.handleMessages()
+        m.OnMessage    = MQTTMessaging.handleMessages(for: messageHandlers, errorHandler: errorHandler)
         m.OnDisconnect = m.handle(disconnect:)
-        m.OnConnect    = m.handle(connect:)
+        m.OnConnect    = m.handleConnection(for: messageHandlers.flatMap { $0.subscriptions })
         m.OnLog        = m.handle(logLevel:message:)
         
         do {
@@ -78,31 +42,16 @@ public struct MQTT {
     }
 }
  
-fileprivate extension Mosquitto {
-    func handleMessages() -> (Mosquitto.Message) -> Void {
-        var lastCall = Date()
-        return { msg in
-            let now = Date()
-            guard now.timeIntervalSince(lastCall) > 0.5,
-                MQTT.hostType == .rpi,
-                let pin = SwiftyGPIO.GPIOs(for: .RaspberryPi3)[.pin26]
-                else {
-                    logger.error("Could not handle message for hostType = \(MQTT.hostType)")
-                    return
-                }
-            lastCall = now
-            guard msg.topic == "relay" else { return }
-            pin.direction = .output
-            logger.info("Turning off relay")
-            pin.value = true
-            logger.info("Turned off relay")
-            sleep(5)
-            logger.info("Turning on relay")
-            pin.value = false
-            logger.info("Turned on relay")
-        }
+extension Mosquitto {
+    static var logMask = LogLevel.DEBUG.rawValue & LogLevel.INFO.rawValue
+}
+extension Mosquitto.LogLevel {
+    static func mask(for levels: [Self]) -> Int32 {
+        levels.map { $0.rawValue }.reduce(0, |)
     }
-    
+}
+
+extension Mosquitto {
     func handle(disconnect status: Mosquitto.ConnectionStatus) -> Void {
         guard status == .ELSE else { return }
         do {
@@ -113,18 +62,22 @@ fileprivate extension Mosquitto {
         }
     }
 
-    func handle(connect status: Mosquitto.ConnectionStatus) -> Void {
-        logger.info("Connected MQTT with status \(status)...")
-        logger.info("Subscribing to `relay` topic")
-        do {
-            try subscribe(topic: "relay")
-        } catch {
-            logger.error("Unable to subscript to relay topic: \(error)")
+    func handleConnection(for topics:[String]) -> (Mosquitto.ConnectionStatus) -> Void {
+        return { status in
+            logger.info("Connected to MQTT with status \(status)...")
+            topics.forEach { topic in
+                do {
+                    logger.info("Subscribing to: \(topic)")
+                    try self.subscribe(topic: topic)
+                } catch {
+                    logger.error("Unable to subscript to relay topic: \(error)")
+                }
+            }
         }
     }
     
     func handle(logLevel: LogLevel, message: String) {
-        guard logLevel != .DEBUG else { return }
+        guard (logLevel.rawValue & Mosquitto.logMask) > 0 else { return }
         logger.info("\(message)")
     }
 }

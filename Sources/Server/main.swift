@@ -3,11 +3,19 @@ import ArgumentParser
 import NIO
 import PerfectMosquitto
 import Foundation
+import SwiftyGPIO
+import SQLite
 
-public enum HostType: ExpressibleByArgument {
+public enum HostType {
     case rpi
     case mac
 
+    #if os(macOS)
+    static let hostType: HostType = .mac
+    #else
+    static let hostType: HostType = .rpi
+    #endif
+    
     public init?(argument: String) {
         switch argument.lowercased() {
         case "rpi": self = .rpi
@@ -17,44 +25,46 @@ public enum HostType: ExpressibleByArgument {
     }
 }
 
+extension Logger.Level: ExpressibleByArgument { }
 
-struct Server: ParsableCommand {
-    @Argument(
-        default: "relaycontroller",
-        help: ArgumentHelp("handle different pi convention", valueName: "device")
-    )
-    var program: String
+private func logging(for options: ServerOptions) -> Logger {
+    var logger = Logger(label: "net.playspots.PlayspotRelayController")
+    logger.logLevel = options.logLevel
     
-    @Option(
-        default: .rpi,
-        help: ArgumentHelp("device type to run on", valueName: "device")
-    )
-    var device: HostType
-
-    @Option(
-        default: "192.168.2.1",
-        help: ArgumentHelp("mqtt host", valueName: "host")
-    )
-    var host: String
-
-    @Option(
-        default: 1883,
-        help: ArgumentHelp("mqtt port", valueName: "port")
-    )
-    var port: Int
+    switch options.logLevel {
+    case .trace: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ALL, .DEBUG, .ERR, .INFO, .NOTICE, .SUBSCRIBE, .UNSUBSCRIBE])
+    case .debug: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.DEBUG, .ERR, .INFO, .NOTICE, .SUBSCRIBE, .UNSUBSCRIBE])
+    case .info: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ERR, .NOTICE, .SUBSCRIBE, .UNSUBSCRIBE])
+    case .notice, .warning: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ERR, .NOTICE])
+    case .error, .critical: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ERR])
+    }
+    return logger
 }
 
-private let options = Server.parseOrExit()
-private let eventLoops = MultiThreadedEventLoopGroup(numberOfThreads: 1)
+private func errorHandler(_ error: Error) {
+    guard let error = error as? MQTTMessaging.Error else { return }
+    switch error {
+    case .throttled: logger.error("Throttled MQTT handling")
+    case .unhandled: logger.error("Received unhandled message")
+    case .unsupportedOperatingSystem: logger.error("R/Pi required")
+    case .unsupportedHardware: logger.error("Unable to access hardware")
+    case .handlerError(let innerError): logger.error("received \(innerError) while handling message")
+    }
+}
 
-let logger = Logger(label: "net.playspots.PlayspotRelayController")
-logger.info("Server starting")
+private let options = ServerOptions.parseOrExit()
+private let eventLoops = MultiThreadedEventLoopGroup(numberOfThreads: 2)
+let logger = logging(for: options)
+logger.info("Server starting with log level: \(options.logLevel)")
+
 do {
-    MQTT.hostType = options.device
+    MQTTMessaging.eventLoop = eventLoops.next()
     try MQTT.startClient(
         eventLoops.next(),
         host: options.host,
-        port: Int32(options.port)
+        port: Int32(options.port),
+        messageHandlers: [RelayController.relayReset],
+        errorHandler: errorHandler
     ).wait()
     
     logger.info("Server shutting down")
@@ -62,4 +72,5 @@ do {
 } catch {
     logger.error("Server start up failed with: \(error)")
 }
+
 logger.info("Server exited")

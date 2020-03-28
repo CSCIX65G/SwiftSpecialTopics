@@ -22,6 +22,10 @@
 
 /* Begin PBXBuildFile section */
 		FB506D2C242BDDD700EF6DFF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D2B242BDDD700EF6DFF /* MQTT.swift */; };
+		FB506D34242D7D9200EF6DFF /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = FB506D33242D7D9200EF6DFF /* SQLite */; };
+		FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */; };
+		FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D37242EB6C200EF6DFF /* ServerOptions.swift */; };
+		FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D39242EB6FE00EF6DFF /* RelayController.swift */; };
 		OBJ_194 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* Argument.swift */; };
 		OBJ_195 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* ArgumentHelp.swift */; };
 		OBJ_196 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* Errors.swift */; };
@@ -296,6 +300,9 @@
 		FB506D2B242BDDD700EF6DFF /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
 		FB506D2E242C001000EF6DFF /* build-armv7.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-armv7.sh"; sourceTree = "<group>"; };
 		FB506D31242C006A00EF6DFF /* Dockerfile-armv7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Dockerfile-armv7"; sourceTree = "<group>"; };
+		FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTMessaging.swift; sourceTree = "<group>"; };
+		FB506D37242EB6C200EF6DFF /* ServerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOptions.swift; sourceTree = "<group>"; };
+		FB506D39242EB6FE00EF6DFF /* RelayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayController.swift; sourceTree = "<group>"; };
 		OBJ_100 /* NIOAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOAny.swift; sourceTree = "<group>"; };
 		OBJ_101 /* NIOCloseOnErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOCloseOnErrorHandler.swift; sourceTree = "<group>"; };
 		OBJ_102 /* NIOThreadPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOThreadPool.swift; sourceTree = "<group>"; };
@@ -523,6 +530,7 @@
 				OBJ_388 /* Logging.framework in Frameworks */,
 				OBJ_389 /* SwiftyGPIO.framework in Frameworks */,
 				OBJ_390 /* PerfectMosquitto.framework in Frameworks */,
+				FB506D34242D7D9200EF6DFF /* SQLite in Frameworks */,
 				OBJ_391 /* ArgumentParser.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1022,7 +1030,10 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* main.swift */,
+				FB506D39242EB6FE00EF6DFF /* RelayController.swift */,
+				FB506D37242EB6C200EF6DFF /* ServerOptions.swift */,
 				FB506D2B242BDDD700EF6DFF /* MQTT.swift */,
+				FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */,
 			);
 			name = Server;
 			path = Sources/Server;
@@ -1149,6 +1160,9 @@
 				OBJ_402 /* PBXTargetDependency */,
 			);
 			name = Server;
+			packageProductDependencies = (
+				FB506D33242D7D9200EF6DFF /* SQLite */,
+			);
 			productName = Server;
 			productReference = "relaycontroller::Server::Product" /* Server */;
 			productType = "com.apple.product-type.tool";
@@ -1371,6 +1385,7 @@
 				FB506D28242BDCC000EF6DFF /* XCRemoteSwiftPackageReference "swift-log" */,
 				FB506D29242BDCDF00EF6DFF /* XCRemoteSwiftPackageReference "Perfect-Mosquitto" */,
 				FB506D2A242BDD3300EF6DFF /* XCRemoteSwiftPackageReference "SwiftyGPIO" */,
+				FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */,
 			);
 			productRefGroup = OBJ_175 /* Products */;
 			projectDirPath = "";
@@ -1580,7 +1595,10 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_380 /* main.swift in Sources */,
+				FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */,
+				FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */,
 				FB506D2C242BDDD700EF6DFF /* MQTT.swift in Sources */,
+				FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2876,7 +2894,23 @@
 				kind = branch;
 			};
 		};
+		FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:stephencelis/SQLite.swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB506D33242D7D9200EF6DFF /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = OBJ_1 /* Project object */;
 }

@@ -52,19 +52,11 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "--device"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "mac"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
             argument = "--host"
             isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "10.8.0.5"
+            argument = "10.8.0.20"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
