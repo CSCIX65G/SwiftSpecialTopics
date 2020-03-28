@@ -42,7 +42,7 @@ private func logging(for options: ServerOptions) -> Logger {
 }
 
 private func errorHandler(_ error: Error) {
-    guard let error = error as? MQTTMessaging.Error else { return }
+    guard let error = error as? MQTT.Error else { return }
     switch error {
     case .throttled: logger.error("Throttled MQTT handling")
     case .unhandled: logger.error("Received unhandled message")
@@ -58,7 +58,7 @@ let logger = logging(for: options)
 logger.info("Server starting with log level: \(options.logLevel)")
 
 do {
-    MQTTMessaging.eventLoop = eventLoops.next()
+    MQTT.eventLoop = eventLoops.next()
     try MQTT.startClient(
         eventLoops.next(),
         host: options.host,

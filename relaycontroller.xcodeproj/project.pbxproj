@@ -26,6 +26,10 @@
 		FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */; };
 		FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D37242EB6C200EF6DFF /* ServerOptions.swift */; };
 		FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D39242EB6FE00EF6DFF /* RelayController.swift */; };
+		FB506D3D242F881200EF6DFF /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = FB506D3C242F881200EF6DFF /* Overture */; };
+		FB506D3F242FA3E700EF6DFF /* MQTTParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D3E242FA3E700EF6DFF /* MQTTParsing.swift */; };
+		FBFEFB84242FA8C300E2ED92 /* ServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEFB83242FA8C300E2ED92 /* ServerTests.swift */; };
+		FBFEFB89242FA8D700E2ED92 /* ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D44242FA79200EF6DFF /* ParsingTests.swift */; };
 		OBJ_194 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* Argument.swift */; };
 		OBJ_195 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* ArgumentHelp.swift */; };
 		OBJ_196 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* Errors.swift */; };
@@ -303,6 +307,12 @@
 		FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTMessaging.swift; sourceTree = "<group>"; };
 		FB506D37242EB6C200EF6DFF /* ServerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOptions.swift; sourceTree = "<group>"; };
 		FB506D39242EB6FE00EF6DFF /* RelayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayController.swift; sourceTree = "<group>"; };
+		FB506D3E242FA3E700EF6DFF /* MQTTParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTParsing.swift; sourceTree = "<group>"; };
+		FB506D44242FA79200EF6DFF /* ParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingTests.swift; sourceTree = "<group>"; };
+		FBFEFB7C242FA82000E2ED92 /* Parsing.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Parsing.xctestplan; path = Tests/Parsing/Parsing.xctestplan; sourceTree = "<group>"; };
+		FBFEFB81242FA8C300E2ED92 /* ServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBFEFB83242FA8C300E2ED92 /* ServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTests.swift; sourceTree = "<group>"; };
+		FBFEFB85242FA8C300E2ED92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_100 /* NIOAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOAny.swift; sourceTree = "<group>"; };
 		OBJ_101 /* NIOCloseOnErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOCloseOnErrorHandler.swift; sourceTree = "<group>"; };
 		OBJ_102 /* NIOThreadPool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOThreadPool.swift; sourceTree = "<group>"; };
@@ -448,6 +458,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FBFEFB7E242FA8C300E2ED92 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_222 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
@@ -529,6 +546,7 @@
 				OBJ_387 /* CNIOLinux.framework in Frameworks */,
 				OBJ_388 /* Logging.framework in Frameworks */,
 				OBJ_389 /* SwiftyGPIO.framework in Frameworks */,
+				FB506D3D242F881200EF6DFF /* Overture in Frameworks */,
 				OBJ_390 /* PerfectMosquitto.framework in Frameworks */,
 				FB506D34242D7D9200EF6DFF /* SQLite in Frameworks */,
 				OBJ_391 /* ArgumentParser.framework in Frameworks */,
@@ -545,9 +563,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB506D43242FA79200EF6DFF /* Parsing */ = {
+			isa = PBXGroup;
+			children = (
+				FB506D44242FA79200EF6DFF /* ParsingTests.swift */,
+			);
+			name = Parsing;
+			path = Tests/Parsing;
+			sourceTree = "<group>";
+		};
+		FBFEFB7B242FA7DB00E2ED92 /* ServerTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ServerTests;
+			path = Tests/ServerTests;
+			sourceTree = "<group>";
+		};
+		FBFEFB82242FA8C300E2ED92 /* ServerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FBFEFB83242FA8C300E2ED92 /* ServerTests.swift */,
+				FBFEFB85242FA8C300E2ED92 /* Info.plist */,
+			);
+			path = ServerTests;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				FBFEFB7B242FA7DB00E2ED92 /* ServerTests */,
+				FB506D43242FA79200EF6DFF /* Parsing */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -757,6 +803,7 @@
 				"swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */,
 				"SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */,
 				"swift-nio::NIO::Product" /* NIO.framework */,
+				FBFEFB81242FA8C300E2ED92 /* ServerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -877,9 +924,10 @@
 			path = ".build/checkouts/swift-nio/Sources/CNIODarwin";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
+				FBFEFB7C242FA82000E2ED92 /* Parsing.xctestplan */,
 				OBJ_188 /* README.md */,
 				OBJ_6 /* Package.swift */,
 				FB506D2E242C001000EF6DFF /* build-armv7.sh */,
@@ -887,9 +935,9 @@
 				OBJ_7 /* Sources */,
 				OBJ_10 /* Tests */,
 				OBJ_11 /* Dependencies */,
+				FBFEFB82242FA8C300E2ED92 /* ServerTests */,
 				OBJ_175 /* Products */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_50 /* include */ = {
@@ -1034,6 +1082,7 @@
 				FB506D37242EB6C200EF6DFF /* ServerOptions.swift */,
 				FB506D2B242BDDD700EF6DFF /* MQTT.swift */,
 				FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */,
+				FB506D3E242FA3E700EF6DFF /* MQTTParsing.swift */,
 			);
 			name = Server;
 			path = Sources/Server;
@@ -1078,6 +1127,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		FBFEFB80242FA8C300E2ED92 /* ServerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FBFEFB86242FA8C300E2ED92 /* Build configuration list for PBXNativeTarget "ServerTests" */;
+			buildPhases = (
+				FBFEFB7D242FA8C300E2ED92 /* Sources */,
+				FBFEFB7E242FA8C300E2ED92 /* Frameworks */,
+				FBFEFB7F242FA8C300E2ED92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ServerTests;
+			productName = ServerTests;
+			productReference = FBFEFB81242FA8C300E2ED92 /* ServerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		"PerfectMosquitto::PerfectMosquitto" /* PerfectMosquitto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_363 /* Build configuration list for PBXNativeTarget "PerfectMosquitto" */;
@@ -1162,6 +1228,7 @@
 			name = Server;
 			packageProductDependencies = (
 				FB506D33242D7D9200EF6DFF /* SQLite */,
+				FB506D3C242F881200EF6DFF /* Overture */,
 			);
 			productName = Server;
 			productReference = "relaycontroller::Server::Product" /* Server */;
@@ -1370,7 +1437,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 9999;
+				TargetAttributes = {
+					FBFEFB80242FA8C300E2ED92 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "relaycontroller" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1379,13 +1452,14 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			packageReferences = (
 				FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */,
 				FB506D28242BDCC000EF6DFF /* XCRemoteSwiftPackageReference "swift-log" */,
 				FB506D29242BDCDF00EF6DFF /* XCRemoteSwiftPackageReference "Perfect-Mosquitto" */,
 				FB506D2A242BDD3300EF6DFF /* XCRemoteSwiftPackageReference "SwiftyGPIO" */,
 				FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */,
+				FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */,
 			);
 			productRefGroup = OBJ_175 /* Products */;
 			projectDirPath = "";
@@ -1409,11 +1483,31 @@
 				"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */,
 				"swift-log::SwiftPMPackageDescription" /* swift-logPackageDescription */,
 				"swift-nio::SwiftPMPackageDescription" /* swift-nioPackageDescription */,
+				FBFEFB80242FA8C300E2ED92 /* ServerTests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		FBFEFB7F242FA8C300E2ED92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FBFEFB7D242FA8C300E2ED92 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FBFEFB89242FA8D700E2ED92 /* ParsingTests.swift in Sources */,
+				FBFEFB84242FA8C300E2ED92 /* ServerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_193 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -1598,6 +1692,7 @@
 				FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */,
 				FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */,
 				FB506D2C242BDDD700EF6DFF /* MQTT.swift in Sources */,
+				FB506D3F242FA3E700EF6DFF /* MQTTParsing.swift in Sources */,
 				FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1753,6 +1848,131 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		FBFEFB87242FA8C300E2ED92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 49D8NY9JB9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = computecycles.com.ServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FBFEFB88242FA8C300E2ED92 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 49D8NY9JB9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = ServerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = computecycles.com.ServerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		OBJ_191 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2688,6 +2908,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FBFEFB86242FA8C300E2ED92 /* Build configuration list for PBXNativeTarget "ServerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FBFEFB87242FA8C300E2ED92 /* Debug */,
+				FBFEFB88242FA8C300E2ED92 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		OBJ_190 /* Build configuration list for PBXNativeTarget "ArgumentParser" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -2902,6 +3131,14 @@
 				minimumVersion = 0.12.2;
 			};
 		};
+		FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:pointfreeco/swift-overture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.5.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -2909,6 +3146,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FB506D32242D7D9200EF6DFF /* XCRemoteSwiftPackageReference "SQLite" */;
 			productName = SQLite;
+		};
+		FB506D3C242F881200EF6DFF /* Overture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */;
+			productName = Overture;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

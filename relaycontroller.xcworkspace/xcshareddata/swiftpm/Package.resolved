@@ -38,6 +38,15 @@
         }
       },
       {
+        "package": "Overture",
+        "repositoryURL": "git@github.com:pointfreeco/swift-overture",
+        "state": {
+          "branch": null,
+          "revision": "7977acd7597f413717058acc1e080731249a1d7e",
+          "version": "0.5.0"
+        }
+      },
+      {
         "package": "SwiftyGPIO",
         "repositoryURL": "git@github.com:uraimo/SwiftyGPIO",
         "state": {
