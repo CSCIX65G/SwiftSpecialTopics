@@ -4,6 +4,7 @@ import NIO
 import PerfectMosquitto
 import Foundation
 import SwiftyGPIO
+import MQTT
 
 public enum HostType {
     case rpi
@@ -29,25 +30,25 @@ extension Logger.Level: ExpressibleByArgument { }
 private func logging(for options: ServerOptions) -> Logger {
     var logger = Logger(label: "net.playspots.PlayspotRelayController")
     logger.logLevel = options.logLevel
-    
-    switch options.logLevel {
-    case .trace: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ALL, .DEBUG, .ERR, .INFO, .NOTICE, .SUBSCRIBE, .UNSUBSCRIBE])
-    case .debug: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.DEBUG, .ERR, .INFO, .NOTICE, .SUBSCRIBE, .UNSUBSCRIBE])
-    case .info: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ERR, .NOTICE, .SUBSCRIBE, .UNSUBSCRIBE])
-    case .notice, .warning: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ERR, .NOTICE])
-    case .error, .critical: Mosquitto.logMask = Mosquitto.LogLevel.mask(for: [.ERR])
-    }
+    MQTT.log(at: options.logLevel)
     return logger
 }
 
-private func errorHandler(_ error: Error) {
+private func errorHandler(_ error: Swift.Error) {
     guard let error = error as? MQTT.Error else { return }
     switch error {
-    case .throttled: logger.error("Throttled MQTT handling")
-    case .unhandled: logger.error("Received unhandled message")
-    case .unsupportedOperatingSystem: logger.error("R/Pi required")
-    case .unsupportedHardware: logger.error("Unable to access hardware")
-    case .handlerError(let innerError): logger.error("received \(innerError) while handling message")
+    case .throttled:
+        logger.error("Throttled MQTT handling")
+    case .unhandled:
+        logger.error("Received unhandled message")
+    case .unsupportedOperatingSystem:
+        logger.error("R/Pi required")
+    case .unsupportedHardware:
+        logger.error("Unable to access hardware")
+    case .handlerError(let innerError):
+        logger.error("received \(innerError) while handling message")
+    case .badTopic:
+        logger.error("Specified a bad topic")
     }
 }
 
@@ -57,12 +58,11 @@ let logger = logging(for: options)
 logger.info("Server starting with log level: \(options.logLevel)")
 
 do {
-    MQTT.eventLoop = eventLoops.next()
-    try MQTT.startClient(
-        eventLoops.next(),
+    try MQTT.start(
+        on: eventLoops.next(),
+        using: [RelayController.relayReset],
         host: options.host,
         port: Int32(options.port),
-        messageHandlers: [RelayController.relayReset],
         errorHandler: errorHandler
     ).wait()
     

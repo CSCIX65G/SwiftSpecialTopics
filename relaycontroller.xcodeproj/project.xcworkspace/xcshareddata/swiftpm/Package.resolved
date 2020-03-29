@@ -1,0 +1,61 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "mqtt-client",
+        "repositoryURL": "git@github.com:rvsrvs/mqtt-client.git",
+        "state": {
+          "branch": "master",
+          "revision": "66a7e7db2c0773dee83be8b545254b0fd6033dd5",
+          "version": null
+        }
+      },
+      {
+        "package": "PerfectMosquitto",
+        "repositoryURL": "git@github.com:CSCIX65G/Perfect-Mosquitto.git",
+        "state": {
+          "branch": "master",
+          "revision": "0d79f6e1c2aed7e55fb47b8f6b243f5845f94b24",
+          "version": null
+        }
+      },
+      {
+        "package": "swift-log",
+        "repositoryURL": "git@github.com:apple/swift-log.git",
+        "state": {
+          "branch": null,
+          "revision": "74d7b91ceebc85daf387ebb206003f78813f71aa",
+          "version": "1.2.0"
+        }
+      },
+      {
+        "package": "swift-nio",
+        "repositoryURL": "git@github.com:apple/swift-nio.git",
+        "state": {
+          "branch": null,
+          "revision": "a27a07719ca785bcaca019a5b9fe1814b981b4a2",
+          "version": "2.15.0"
+        }
+      },
+      {
+        "package": "Overture",
+        "repositoryURL": "git@github.com:pointfreeco/swift-overture",
+        "state": {
+          "branch": null,
+          "revision": "7977acd7597f413717058acc1e080731249a1d7e",
+          "version": "0.5.0"
+        }
+      },
+      {
+        "package": "SwiftyGPIO",
+        "repositoryURL": "git@github.com:uraimo/SwiftyGPIO",
+        "state": {
+          "branch": "next_release",
+          "revision": "039941b53af4e8e3321650bc65aefe1f626d2251",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

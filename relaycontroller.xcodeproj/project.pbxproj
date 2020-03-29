@@ -21,14 +21,20 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		FB506D2C242BDDD700EF6DFF /* MQTT.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D2B242BDDD700EF6DFF /* MQTT.swift */; };
-		FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */; };
 		FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D37242EB6C200EF6DFF /* ServerOptions.swift */; };
 		FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D39242EB6FE00EF6DFF /* RelayController.swift */; };
-		FB506D3D242F881200EF6DFF /* Overture in Frameworks */ = {isa = PBXBuildFile; productRef = FB506D3C242F881200EF6DFF /* Overture */; };
-		FB506D3F242FA3E700EF6DFF /* MQTTParsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D3E242FA3E700EF6DFF /* MQTTParsing.swift */; };
+		FBE865652431612E00A82662 /* _NIO1APIShims in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865642431612E00A82662 /* _NIO1APIShims */; };
+		FBE865672431612E00A82662 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865662431612E00A82662 /* NIO */; };
+		FBE865692431612E00A82662 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865682431612E00A82662 /* NIOConcurrencyHelpers */; };
+		FBE8656B2431612E00A82662 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = FBE8656A2431612E00A82662 /* NIOFoundationCompat */; };
+		FBE8656D2431612E00A82662 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = FBE8656C2431612E00A82662 /* NIOHTTP1 */; };
+		FBE8656F2431612E00A82662 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = FBE8656E2431612E00A82662 /* NIOTestUtils */; };
+		FBE865712431612E00A82662 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865702431612E00A82662 /* NIOTLS */; };
+		FBE865732431612E00A82662 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865722431612E00A82662 /* NIOWebSocket */; };
+		FBE865752431612E00A82662 /* Logging in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865742431612E00A82662 /* Logging */; };
+		FBE865772431612E00A82662 /* SwiftyGPIO in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865762431612E00A82662 /* SwiftyGPIO */; };
+		FBE865792431612E00A82662 /* mqtt-client in Frameworks */ = {isa = PBXBuildFile; productRef = FBE865782431612E00A82662 /* mqtt-client */; };
 		FBFEFB84242FA8C300E2ED92 /* ServerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFEFB83242FA8C300E2ED92 /* ServerTests.swift */; };
-		FBFEFB89242FA8D700E2ED92 /* ParsingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB506D44242FA79200EF6DFF /* ParsingTests.swift */; };
 		OBJ_194 /* Argument.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* Argument.swift */; };
 		OBJ_195 /* ArgumentHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* ArgumentHelp.swift */; };
 		OBJ_196 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* Errors.swift */; };
@@ -144,19 +150,7 @@
 		OBJ_357 /* atomics.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_130 /* atomics.swift */; };
 		OBJ_358 /* lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* lock.swift */; };
 		OBJ_360 /* CNIOAtomics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */; };
-		OBJ_367 /* PerfectMosquitto.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* PerfectMosquitto.swift */; };
-		OBJ_374 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Package.swift */; };
 		OBJ_380 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* main.swift */; };
-		OBJ_382 /* NIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::NIO::Product" /* NIO.framework */; };
-		OBJ_383 /* CNIOSHA1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOSHA1::Product" /* CNIOSHA1.framework */; };
-		OBJ_384 /* NIOConcurrencyHelpers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::NIOConcurrencyHelpers::Product" /* NIOConcurrencyHelpers.framework */; };
-		OBJ_385 /* CNIOAtomics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */; };
-		OBJ_386 /* CNIODarwin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIODarwin::Product" /* CNIODarwin.framework */; };
-		OBJ_387 /* CNIOLinux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOLinux::Product" /* CNIOLinux.framework */; };
-		OBJ_388 /* Logging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-log::Logging::Product" /* Logging.framework */; };
-		OBJ_389 /* SwiftyGPIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */; };
-		OBJ_390 /* PerfectMosquitto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "PerfectMosquitto::PerfectMosquitto::Product" /* PerfectMosquitto.framework */; };
-		OBJ_391 /* ArgumentParser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */; };
 		OBJ_407 /* 1Wire.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* 1Wire.swift */; };
 		OBJ_408 /* ADC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_16 /* ADC.swift */; };
 		OBJ_409 /* GPIO.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* GPIO.swift */; };
@@ -178,13 +172,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		FB506D13242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-nio::NIO";
-			remoteInfo = NIO;
-		};
 		FB506D14242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -227,69 +214,6 @@
 			remoteGlobalIDString = "swift-nio::CNIOLinux";
 			remoteInfo = CNIOLinux;
 		};
-		FB506D1A242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-nio::CNIOSHA1";
-			remoteInfo = CNIOSHA1;
-		};
-		FB506D1B242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-nio::NIOConcurrencyHelpers";
-			remoteInfo = NIOConcurrencyHelpers;
-		};
-		FB506D1C242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-nio::CNIOAtomics";
-			remoteInfo = CNIOAtomics;
-		};
-		FB506D1D242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-nio::CNIODarwin";
-			remoteInfo = CNIODarwin;
-		};
-		FB506D1E242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-nio::CNIOLinux";
-			remoteInfo = CNIOLinux;
-		};
-		FB506D1F242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-log::Logging";
-			remoteInfo = Logging;
-		};
-		FB506D20242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "SwiftyGPIO::SwiftyGPIO";
-			remoteInfo = SwiftyGPIO;
-		};
-		FB506D21242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "PerfectMosquitto::PerfectMosquitto";
-			remoteInfo = PerfectMosquitto;
-		};
-		FB506D22242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "swift-argument-parser::ArgumentParser";
-			remoteInfo = ArgumentParser;
-		};
 		FB506D23242BDC5600EF6DFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
@@ -307,14 +231,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB506D2B242BDDD700EF6DFF /* MQTT.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MQTT.swift; sourceTree = "<group>"; };
 		FB506D2E242C001000EF6DFF /* build-armv7.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "build-armv7.sh"; sourceTree = "<group>"; };
 		FB506D31242C006A00EF6DFF /* Dockerfile-armv7 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Dockerfile-armv7"; sourceTree = "<group>"; };
-		FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTMessaging.swift; sourceTree = "<group>"; };
 		FB506D37242EB6C200EF6DFF /* ServerOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerOptions.swift; sourceTree = "<group>"; };
 		FB506D39242EB6FE00EF6DFF /* RelayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelayController.swift; sourceTree = "<group>"; };
-		FB506D3E242FA3E700EF6DFF /* MQTTParsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MQTTParsing.swift; sourceTree = "<group>"; };
-		FB506D44242FA79200EF6DFF /* ParsingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParsingTests.swift; sourceTree = "<group>"; };
 		FBFEFB7C242FA82000E2ED92 /* Parsing.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Parsing.xctestplan; path = Tests/Parsing/Parsing.xctestplan; sourceTree = "<group>"; };
 		FBFEFB81242FA8C300E2ED92 /* ServerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBFEFB83242FA8C300E2ED92 /* ServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerTests.swift; sourceTree = "<group>"; };
@@ -450,7 +370,6 @@
 		OBJ_97 /* LinuxCPUSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxCPUSet.swift; sourceTree = "<group>"; };
 		OBJ_98 /* MarkedCircularBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkedCircularBuffer.swift; sourceTree = "<group>"; };
 		OBJ_99 /* MulticastChannel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastChannel.swift; sourceTree = "<group>"; };
-		"PerfectMosquitto::PerfectMosquitto::Product" /* PerfectMosquitto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PerfectMosquitto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"SwiftyGPIO::SwiftyGPIO::Product" /* SwiftyGPIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SwiftyGPIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"relaycontroller::Server::Product" /* Server */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Server; sourceTree = BUILT_PRODUCTS_DIR; };
 		"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ArgumentParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -533,28 +452,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_368 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_381 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_382 /* NIO.framework in Frameworks */,
-				OBJ_383 /* CNIOSHA1.framework in Frameworks */,
-				OBJ_384 /* NIOConcurrencyHelpers.framework in Frameworks */,
-				OBJ_385 /* CNIOAtomics.framework in Frameworks */,
-				OBJ_386 /* CNIODarwin.framework in Frameworks */,
-				OBJ_387 /* CNIOLinux.framework in Frameworks */,
-				OBJ_388 /* Logging.framework in Frameworks */,
-				OBJ_389 /* SwiftyGPIO.framework in Frameworks */,
-				FB506D3D242F881200EF6DFF /* Overture in Frameworks */,
-				OBJ_390 /* PerfectMosquitto.framework in Frameworks */,
-				OBJ_391 /* ArgumentParser.framework in Frameworks */,
+				FBE865752431612E00A82662 /* Logging in Frameworks */,
+				FBE8656B2431612E00A82662 /* NIOFoundationCompat in Frameworks */,
+				FBE865732431612E00A82662 /* NIOWebSocket in Frameworks */,
+				FBE865772431612E00A82662 /* SwiftyGPIO in Frameworks */,
+				FBE865692431612E00A82662 /* NIOConcurrencyHelpers in Frameworks */,
+				FBE865652431612E00A82662 /* _NIO1APIShims in Frameworks */,
+				FBE8656D2431612E00A82662 /* NIOHTTP1 in Frameworks */,
+				FBE865792431612E00A82662 /* mqtt-client in Frameworks */,
+				FBE865712431612E00A82662 /* NIOTLS in Frameworks */,
+				FBE865672431612E00A82662 /* NIO in Frameworks */,
+				FBE8656F2431612E00A82662 /* NIOTestUtils in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -568,15 +480,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB506D43242FA79200EF6DFF /* Parsing */ = {
-			isa = PBXGroup;
-			children = (
-				FB506D44242FA79200EF6DFF /* ParsingTests.swift */,
-			);
-			name = Parsing;
-			path = Tests/Parsing;
-			sourceTree = "<group>";
-		};
 		FBFEFB7B242FA7DB00E2ED92 /* ServerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,7 +508,6 @@
 			isa = PBXGroup;
 			children = (
 				FBFEFB7B242FA7DB00E2ED92 /* ServerTests */,
-				FB506D43242FA79200EF6DFF /* Parsing */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
@@ -807,7 +709,6 @@
 				"swift-nio::CNIOLinux::Product" /* CNIOLinux.framework */,
 				"relaycontroller::Server::Product" /* Server */,
 				"swift-nio::NIOConcurrencyHelpers::Product" /* NIOConcurrencyHelpers.framework */,
-				"PerfectMosquitto::PerfectMosquitto::Product" /* PerfectMosquitto.framework */,
 				"swift-argument-parser::ArgumentParser::Product" /* ArgumentParser.framework */,
 				"swift-log::Logging::Product" /* Logging.framework */,
 				"swift-nio::CNIODarwin::Product" /* CNIODarwin.framework */,
@@ -1091,11 +992,8 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_9 /* main.swift */,
-				FB506D39242EB6FE00EF6DFF /* RelayController.swift */,
 				FB506D37242EB6C200EF6DFF /* ServerOptions.swift */,
-				FB506D2B242BDDD700EF6DFF /* MQTT.swift */,
-				FB506D35242E201D00EF6DFF /* MQTTMessaging.swift */,
-				FB506D3E242FA3E700EF6DFF /* MQTTParsing.swift */,
+				FB506D39242EB6FE00EF6DFF /* RelayController.swift */,
 			);
 			name = Server;
 			path = Sources/Server;
@@ -1158,36 +1056,6 @@
 			productReference = FBFEFB81242FA8C300E2ED92 /* ServerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		"PerfectMosquitto::PerfectMosquitto" /* PerfectMosquitto */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_363 /* Build configuration list for PBXNativeTarget "PerfectMosquitto" */;
-			buildPhases = (
-				OBJ_366 /* Sources */,
-				OBJ_368 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PerfectMosquitto;
-			productName = PerfectMosquitto;
-			productReference = "PerfectMosquitto::PerfectMosquitto::Product" /* PerfectMosquitto.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"PerfectMosquitto::SwiftPMPackageDescription" /* PerfectMosquittoPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_370 /* Build configuration list for PBXNativeTarget "PerfectMosquittoPackageDescription" */;
-			buildPhases = (
-				OBJ_373 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PerfectMosquittoPackageDescription;
-			productName = PerfectMosquittoPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"SwiftyGPIO::SwiftPMPackageDescription" /* SwiftyGPIOPackageDescription */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_422 /* Build configuration list for PBXNativeTarget "SwiftyGPIOPackageDescription" */;
@@ -1228,20 +1096,20 @@
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_392 /* PBXTargetDependency */,
-				OBJ_393 /* PBXTargetDependency */,
-				OBJ_394 /* PBXTargetDependency */,
-				OBJ_395 /* PBXTargetDependency */,
-				OBJ_396 /* PBXTargetDependency */,
-				OBJ_397 /* PBXTargetDependency */,
-				OBJ_398 /* PBXTargetDependency */,
-				OBJ_399 /* PBXTargetDependency */,
-				OBJ_401 /* PBXTargetDependency */,
-				OBJ_402 /* PBXTargetDependency */,
 			);
 			name = Server;
 			packageProductDependencies = (
-				FB506D3C242F881200EF6DFF /* Overture */,
+				FBE865642431612E00A82662 /* _NIO1APIShims */,
+				FBE865662431612E00A82662 /* NIO */,
+				FBE865682431612E00A82662 /* NIOConcurrencyHelpers */,
+				FBE8656A2431612E00A82662 /* NIOFoundationCompat */,
+				FBE8656C2431612E00A82662 /* NIOHTTP1 */,
+				FBE8656E2431612E00A82662 /* NIOTestUtils */,
+				FBE865702431612E00A82662 /* NIOTLS */,
+				FBE865722431612E00A82662 /* NIOWebSocket */,
+				FBE865742431612E00A82662 /* Logging */,
+				FBE865762431612E00A82662 /* SwiftyGPIO */,
+				FBE865782431612E00A82662 /* mqtt-client */,
 			);
 			productName = Server;
 			productReference = "relaycontroller::Server::Product" /* Server */;
@@ -1469,9 +1337,8 @@
 			packageReferences = (
 				FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */,
 				FB506D28242BDCC000EF6DFF /* XCRemoteSwiftPackageReference "swift-log" */,
-				FB506D29242BDCDF00EF6DFF /* XCRemoteSwiftPackageReference "Perfect-Mosquitto" */,
 				FB506D2A242BDD3300EF6DFF /* XCRemoteSwiftPackageReference "SwiftyGPIO" */,
-				FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */,
+				FBE8653D2430F53300A82662 /* XCRemoteSwiftPackageReference "mqtt-client" */,
 			);
 			productRefGroup = OBJ_175 /* Products */;
 			projectDirPath = "";
@@ -1485,9 +1352,8 @@
 				"swift-log::Logging" /* Logging */,
 				"swift-nio::NIO" /* NIO */,
 				"swift-nio::NIOConcurrencyHelpers" /* NIOConcurrencyHelpers */,
-				"PerfectMosquitto::PerfectMosquitto" /* PerfectMosquitto */,
-				"PerfectMosquitto::SwiftPMPackageDescription" /* PerfectMosquittoPackageDescription */,
 				"relaycontroller::Server" /* Server */,
+				FBFEFB80242FA8C300E2ED92 /* ServerTests */,
 				"SwiftyGPIO::SwiftyGPIO" /* SwiftyGPIO */,
 				"SwiftyGPIO::SwiftPMPackageDescription" /* SwiftyGPIOPackageDescription */,
 				"relaycontroller::relaycontroller::ProductTarget" /* relaycontroller */,
@@ -1495,7 +1361,6 @@
 				"swift-argument-parser::SwiftPMPackageDescription" /* swift-argument-parserPackageDescription */,
 				"swift-log::SwiftPMPackageDescription" /* swift-logPackageDescription */,
 				"swift-nio::SwiftPMPackageDescription" /* swift-nioPackageDescription */,
-				FBFEFB80242FA8C300E2ED92 /* ServerTests */,
 			);
 		};
 /* End PBXProject section */
@@ -1515,7 +1380,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFEFB89242FA8D700E2ED92 /* ParsingTests.swift in Sources */,
 				FBFEFB84242FA8C300E2ED92 /* ServerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1680,31 +1544,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_366 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_367 /* PerfectMosquitto.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_373 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_374 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		OBJ_379 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
 				OBJ_380 /* main.swift in Sources */,
 				FB506D38242EB6C200EF6DFF /* ServerOptions.swift in Sources */,
-				FB506D36242E201D00EF6DFF /* MQTTMessaging.swift in Sources */,
-				FB506D2C242BDDD700EF6DFF /* MQTT.swift in Sources */,
-				FB506D3F242FA3E700EF6DFF /* MQTTParsing.swift in Sources */,
 				FB506D3A242EB6FE00EF6DFF /* RelayController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1806,56 +1651,6 @@
 			isa = PBXTargetDependency;
 			target = "swift-nio::CNIOAtomics" /* CNIOAtomics */;
 			targetProxy = FB506D16242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_392 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-nio::NIO" /* NIO */;
-			targetProxy = FB506D13242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_393 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-nio::CNIOSHA1" /* CNIOSHA1 */;
-			targetProxy = FB506D1A242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_394 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-nio::NIOConcurrencyHelpers" /* NIOConcurrencyHelpers */;
-			targetProxy = FB506D1B242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_395 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-nio::CNIOAtomics" /* CNIOAtomics */;
-			targetProxy = FB506D1C242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_396 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-nio::CNIODarwin" /* CNIODarwin */;
-			targetProxy = FB506D1D242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_397 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-nio::CNIOLinux" /* CNIOLinux */;
-			targetProxy = FB506D1E242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_398 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-log::Logging" /* Logging */;
-			targetProxy = FB506D1F242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_399 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "SwiftyGPIO::SwiftyGPIO" /* SwiftyGPIO */;
-			targetProxy = FB506D20242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_401 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "PerfectMosquitto::PerfectMosquitto" /* PerfectMosquitto */;
-			targetProxy = FB506D21242BDC5600EF6DFF /* PBXContainerItemProxy */;
-		};
-		OBJ_402 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "swift-argument-parser::ArgumentParser" /* ArgumentParser */;
-			targetProxy = FB506D22242BDC5600EF6DFF /* PBXContainerItemProxy */;
 		};
 		OBJ_431 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -2571,98 +2366,6 @@
 			};
 			name = Release;
 		};
-		OBJ_364 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Perfect-Mosquitto/Sources/cmosquitto",
-				);
-				INFOPLIST_FILE = relaycontroller.xcodeproj/PerfectMosquitto_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-I/usr/local/Cellar/mosquitto/1.6.8/include",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L/usr/local/Cellar/mosquitto/1.6.8/lib",
-					"-lmosquitto",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mosquitto/1.6.8/include";
-				PRODUCT_BUNDLE_IDENTIFIER = PerfectMosquitto;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = PerfectMosquitto;
-			};
-			name = Debug;
-		};
-		OBJ_365 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(SRCROOT)/.build/checkouts/Perfect-Mosquitto/Sources/cmosquitto",
-				);
-				INFOPLIST_FILE = relaycontroller.xcodeproj/PerfectMosquitto_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
-				);
-				OTHER_CFLAGS = (
-					"$(inherited)",
-					"-I/usr/local/Cellar/mosquitto/1.6.8/include",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-L/usr/local/Cellar/mosquitto/1.6.8/lib",
-					"-lmosquitto",
-				);
-				OTHER_SWIFT_FLAGS = "$(inherited) -I/usr/local/Cellar/mosquitto/1.6.8/include";
-				PRODUCT_BUNDLE_IDENTIFIER = PerfectMosquitto;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = PerfectMosquitto;
-			};
-			name = Release;
-		};
-		OBJ_371 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2.0";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		OBJ_372 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -package-description-version 4.2.0";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 		OBJ_377 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -3025,24 +2728,6 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_363 /* Build configuration list for PBXNativeTarget "PerfectMosquitto" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_364 /* Debug */,
-				OBJ_365 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_370 /* Build configuration list for PBXNativeTarget "PerfectMosquittoPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_371 /* Debug */,
-				OBJ_372 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		OBJ_376 /* Build configuration list for PBXNativeTarget "Server" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3134,14 +2819,6 @@
 				minimumVersion = 1.2.0;
 			};
 		};
-		FB506D29242BDCDF00EF6DFF /* XCRemoteSwiftPackageReference "Perfect-Mosquitto" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:CSCIX65G/Perfect-Mosquitto.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 3.1.2;
-			};
-		};
 		FB506D2A242BDD3300EF6DFF /* XCRemoteSwiftPackageReference "SwiftyGPIO" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:uraimo/SwiftyGPIO";
@@ -3150,21 +2827,71 @@
 				kind = branch;
 			};
 		};
-		FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */ = {
+		FBE8653D2430F53300A82662 /* XCRemoteSwiftPackageReference "mqtt-client" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git@github.com:pointfreeco/swift-overture";
+			repositoryURL = "git@github.com:rvsrvs/mqtt-client.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.5.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FB506D3C242F881200EF6DFF /* Overture */ = {
+		FBE865642431612E00A82662 /* _NIO1APIShims */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FB506D3B242F881200EF6DFF /* XCRemoteSwiftPackageReference "swift-overture" */;
-			productName = Overture;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = _NIO1APIShims;
+		};
+		FBE865662431612E00A82662 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		FBE865682431612E00A82662 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		FBE8656A2431612E00A82662 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+		FBE8656C2431612E00A82662 /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		FBE8656E2431612E00A82662 /* NIOTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTestUtils;
+		};
+		FBE865702431612E00A82662 /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		FBE865722431612E00A82662 /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D27242BDCA400EF6DFF /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		FBE865742431612E00A82662 /* Logging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D28242BDCC000EF6DFF /* XCRemoteSwiftPackageReference "swift-log" */;
+			productName = Logging;
+		};
+		FBE865762431612E00A82662 /* SwiftyGPIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB506D2A242BDD3300EF6DFF /* XCRemoteSwiftPackageReference "SwiftyGPIO" */;
+			productName = SwiftyGPIO;
+		};
+		FBE865782431612E00A82662 /* mqtt-client */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FBE8653D2430F53300A82662 /* XCRemoteSwiftPackageReference "mqtt-client" */;
+			productName = "mqtt-client";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
