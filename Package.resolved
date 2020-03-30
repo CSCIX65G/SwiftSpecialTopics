@@ -5,18 +5,18 @@
         "package": "mqtt-client",
         "repositoryURL": "git@github.com:rvsrvs/mqtt-client.git",
         "state": {
-          "branch": "master",
-          "revision": "f77bbc7d488813e35a23e2c9befc9014433474a0",
-          "version": null
+          "branch": null,
+          "revision": "14753790f28732ffeec74c11ff168a54ad686354",
+          "version": "0.6.2"
         }
       },
       {
         "package": "PerfectMosquitto",
         "repositoryURL": "git@github.com:CSCIX65G/Perfect-Mosquitto.git",
         "state": {
-          "branch": "master",
+          "branch": null,
           "revision": "0d79f6e1c2aed7e55fb47b8f6b243f5845f94b24",
-          "version": null
+          "version": "3.1.4"
         }
       },
       {

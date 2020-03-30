@@ -2,9 +2,9 @@ import Foundation
 import ArgumentParser
 import MQTT
  
-private let options = ServerOptions.parseOrExit()
-
+let options = ServerOptions.parseOrExit()
 let logger = logging(for: options)
+
 logger.info("Server starting with log level: \(options.logLevel)")
 
 let cancellable = MQTT.start(

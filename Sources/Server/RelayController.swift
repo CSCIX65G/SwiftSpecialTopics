@@ -20,10 +20,10 @@ func errorHandler(_ swiftError: Swift.Error) {
         Server.logger.error("received \(innerError) from Mosquitto")
     case .throttled:
         Server.logger.error("Throttled MQTT handling")
-    case .unhandled:
+    case .unhandledMessage:
         Server.logger.error("Received unhandled message")
     case .unsupportedOperatingSystem:
-        Server.logger.error("R/Pi required")
+        Server.logger.error("R/Pi required for GPIO operations")
     case .unsupportedHardware:
         Server.logger.error("Could not access controller pin")
     case .badTopic:
