@@ -7,15 +7,13 @@ let dependencies: [PackageDescription.Package.Dependency] = [
     .package(url: "git@github.com:apple/swift-argument-parser",    .upToNextMajor(from: "0.0.4")),
     .package(url: "git@github.com:apple/swift-nio.git",            .upToNextMajor(from: "2.14.0")),
     .package(url: "git@github.com:apple/swift-log.git",            .upToNextMajor(from: "1.2.0")),
-    .package(url: "git@github.com:stephencelis/SQLite.swift)",     .upToNextMajor(from: "0.12.2")),
-    .package(url: "git@github.com:pointfreeco/swift-overture)",    .upToNextMajor(from: "0.5.0")),
-    .package(url: "git@github.com:CSCIX65G/Perfect-Mosquitto.git", .branch("master")),
+    .package(url: "git@github.com:rvsrvs/mqtt-client.git",         .branch("master")),
     .package(url: "git@github.com:uraimo/SwiftyGPIO",              .branch("next_release"))
 ]
 
 let serverTargetDependencies: [Target.Dependency] = [
     "ArgumentParser",
-    "PerfectMosquitto",
+    "MQTT",
     "SwiftyGPIO",
     "Logging",
     "NIO"

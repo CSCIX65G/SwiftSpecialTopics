@@ -6,7 +6,7 @@
         "repositoryURL": "git@github.com:rvsrvs/mqtt-client.git",
         "state": {
           "branch": "master",
-          "revision": "66a7e7db2c0773dee83be8b545254b0fd6033dd5",
+          "revision": "f77bbc7d488813e35a23e2c9befc9014433474a0",
           "version": null
         }
       },
@@ -17,6 +17,15 @@
           "branch": "master",
           "revision": "0d79f6e1c2aed7e55fb47b8f6b243f5845f94b24",
           "version": null
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "git@github.com:apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "8d31a0905c346a45c87773ad50862b5b3df8dff6",
+          "version": "0.0.4"
         }
       },
       {

@@ -9,6 +9,27 @@ import Foundation
 import ArgumentParser
 import Logging
 
+enum HostType {
+    case rpi
+    case mac
+
+    #if os(macOS)
+    static let hostType: HostType = .mac
+    #else
+    static let hostType: HostType = .rpi
+    #endif
+    
+    public init?(argument: String) {
+        switch argument.lowercased() {
+        case "rpi": self = .rpi
+        case "mac": self = .mac
+        default: return nil
+        }
+    }
+}
+
+extension Logger.Level: ExpressibleByArgument { }
+
 struct ServerOptions: ParsableCommand {
     @Argument(
         default: "relaycontroller",

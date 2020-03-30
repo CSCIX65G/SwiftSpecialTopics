@@ -7,19 +7,46 @@
 
 import Foundation
 import SwiftyGPIO
+import Logging
 import MQTT
 
+func errorHandler(_ swiftError: Swift.Error) {
+    guard let error = swiftError as? MQTT.Error else {
+        Server.logger.error("Received error: \(swiftError)")
+        return
+    }
+    switch error {
+    case .mosquittoError(let innerError):
+        Server.logger.error("received \(innerError) from Mosquitto")
+    case .throttled:
+        Server.logger.error("Throttled MQTT handling")
+    case .unhandled:
+        Server.logger.error("Received unhandled message")
+    case .unsupportedOperatingSystem:
+        Server.logger.error("R/Pi required")
+    case .unsupportedHardware:
+        Server.logger.error("Could not access controller pin")
+    case .badTopic:
+        Server.logger.error("Topic as provided could not be parsed")
+    case .handlerError(let innerError):
+        guard let err = innerError as? MQTT.Error else {
+            Server.logger.error("received \(innerError) while handling message")
+            return
+        }
+        errorHandler(err)
+    }
+}
+
 struct RelayController {
-    static var relayReset: MQTT.MessageProcessor {
+    static var resetRelay: MQTT.MessageProcessor {
         guard HostType.hostType == .rpi else {
             return MessageProcessor(matching: "relay") { _,_  in
-                return .failure(MQTT.Error.unsupportedOperatingSystem)
+                .failure(MQTT.Error.unsupportedOperatingSystem)
             }!
         }
         guard let pin = SwiftyGPIO.GPIOs(for: .RaspberryPi3)[.pin26] else {
-            logger.error("Could not access control pin")
             return MQTT.MessageProcessor(matching: "relay") { _, _ in
-                return .failure(MQTT.Error.unsupportedHardware)
+                .failure(MQTT.Error.unsupportedHardware)
             }!
         }
         return MQTT.MessageProcessor(matching: "relay") { _, _ in

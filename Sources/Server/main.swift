@@ -1,71 +1,25 @@
+import Foundation
+import NIO
 import Logging
 import ArgumentParser
-import NIO
-import PerfectMosquitto
-import Foundation
-import SwiftyGPIO
 import MQTT
-
-public enum HostType {
-    case rpi
-    case mac
-
-    #if os(macOS)
-    static let hostType: HostType = .mac
-    #else
-    static let hostType: HostType = .rpi
-    #endif
-    
-    public init?(argument: String) {
-        switch argument.lowercased() {
-        case "rpi": self = .rpi
-        case "mac": self = .mac
-        default: return nil
-        }
-    }
-}
-
-extension Logger.Level: ExpressibleByArgument { }
-
-private func logging(for options: ServerOptions) -> Logger {
-    var logger = Logger(label: "net.playspots.PlayspotRelayController")
-    logger.logLevel = options.logLevel
-    MQTT.log(at: options.logLevel)
-    return logger
-}
-
-private func errorHandler(_ error: Swift.Error) {
-    guard let error = error as? MQTT.Error else { return }
-    switch error {
-    case .throttled:
-        logger.error("Throttled MQTT handling")
-    case .unhandled:
-        logger.error("Received unhandled message")
-    case .unsupportedOperatingSystem:
-        logger.error("R/Pi required")
-    case .unsupportedHardware:
-        logger.error("Unable to access hardware")
-    case .handlerError(let innerError):
-        logger.error("received \(innerError) while handling message")
-    case .badTopic:
-        logger.error("Specified a bad topic")
-    }
-}
-
+ 
 private let options = ServerOptions.parseOrExit()
-private let eventLoops = MultiThreadedEventLoopGroup(numberOfThreads: 2)
+private let eventLoops = MultiThreadedEventLoopGroup(numberOfThreads: 1)
+
 let logger = logging(for: options)
 logger.info("Server starting with log level: \(options.logLevel)")
 
+let cancellable = MQTT.start(
+    receivingOn: eventLoops.next(),
+    throttledAt: 0.5,
+    using: [RelayController.resetRelay],
+    host: options.host,
+    errorHandler: errorHandler
+)
+
 do {
-    try MQTT.start(
-        on: eventLoops.next(),
-        using: [RelayController.relayReset],
-        host: options.host,
-        port: Int32(options.port),
-        errorHandler: errorHandler
-    ).wait()
-    
+    try cancellable.wait()    
     logger.info("Server shutting down")
     try eventLoops.syncShutdownGracefully()
 } catch {

@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "mqtt-client",
+        "repositoryURL": "git@github.com:rvsrvs/mqtt-client.git",
+        "state": {
+          "branch": "master",
+          "revision": "109d400fd70ff1af4791b1e7ea81476e9855c134",
+          "version": null
+        }
+      },
+      {
         "package": "PerfectMosquitto",
         "repositoryURL": "git@github.com:CSCIX65G/Perfect-Mosquitto.git",
         "state": {
@@ -35,6 +44,15 @@
           "branch": null,
           "revision": "a27a07719ca785bcaca019a5b9fe1814b981b4a2",
           "version": "2.15.0"
+        }
+      },
+      {
+        "package": "Overture",
+        "repositoryURL": "git@github.com:pointfreeco/swift-overture",
+        "state": {
+          "branch": null,
+          "revision": "7977acd7597f413717058acc1e080731249a1d7e",
+          "version": "0.5.0"
         }
       },
       {
