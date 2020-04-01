@@ -6,8 +6,8 @@
         "repositoryURL": "git@github.com:rvsrvs/mqtt-client.git",
         "state": {
           "branch": null,
-          "revision": "14753790f28732ffeec74c11ff168a54ad686354",
-          "version": "0.6.2"
+          "revision": "e0670218e9001bf9da1e90f68c2594074e120c42",
+          "version": "0.8.4"
         }
       },
       {

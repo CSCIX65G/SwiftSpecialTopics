@@ -2,12 +2,30 @@
   "object": {
     "pins": [
       {
+        "package": "mqtt-client",
+        "repositoryURL": "git@github.com:rvsrvs/mqtt-client.git",
+        "state": {
+          "branch": null,
+          "revision": "c152f3cbe91566b603876131dc656a62f6d0c195",
+          "version": "0.8.5"
+        }
+      },
+      {
         "package": "PerfectMosquitto",
         "repositoryURL": "git@github.com:CSCIX65G/Perfect-Mosquitto.git",
         "state": {
           "branch": null,
-          "revision": "f9834c344046ddf5f614dfed98a7f9b06fb25545",
-          "version": "3.1.2"
+          "revision": "0d79f6e1c2aed7e55fb47b8f6b243f5845f94b24",
+          "version": "3.1.4"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "git@github.com:apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "8d31a0905c346a45c87773ad50862b5b3df8dff6",
+          "version": "0.0.4"
         }
       },
       {

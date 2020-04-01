@@ -37,6 +37,10 @@ func eventHandler(_ event: MQTT.Event<Void>) {
         Server.logger.trace("Server connecting @\(host):\(port)")
     case .clientSubscribed(let topic):
         Server.logger.trace("Server subscribed to: @\(topic)")
+    case .clientReconnectError(let error):
+        logger.trace("Server errored on reconnect: @\(error)")
+    case .clientSubscriptionError(let error):
+        logger.trace("Server errored on subscription: @\(error)")
     }
 }
  
