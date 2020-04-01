@@ -7,7 +7,7 @@ let dependencies: [PackageDescription.Package.Dependency] = [
     .package(url: "git@github.com:apple/swift-argument-parser",    .upToNextMajor(from: "0.0.4")),
     .package(url: "git@github.com:apple/swift-nio.git",            .upToNextMajor(from: "2.14.0")),
     .package(url: "git@github.com:apple/swift-log.git",            .upToNextMajor(from: "1.2.0")),
-    .package(url: "git@github.com:rvsrvs/mqtt-client.git",         .upToNextMajor(from: "0.6.2")),
+    .package(url: "git@github.com:rvsrvs/mqtt-client.git",         .upToNextMajor(from: "0.8.5")),
     .package(url: "git@github.com:uraimo/SwiftyGPIO",              .branch("next_release"))
 ]
 
