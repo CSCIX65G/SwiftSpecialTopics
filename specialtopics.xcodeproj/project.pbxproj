@@ -1,0 +1,3989 @@
+// !$*UTF8*$!
+{
+   archiveVersion = "1";
+   objectVersion = "46";
+   objects = {
+      "OBJ_1" = {
+         isa = "PBXProject";
+         attributes = {
+            LastSwiftMigration = "9999";
+            LastUpgradeCheck = "9999";
+         };
+         buildConfigurationList = "OBJ_2";
+         compatibilityVersion = "Xcode 3.2";
+         developmentRegion = "en";
+         hasScannedForEncodings = "0";
+         knownRegions = (
+            "en"
+         );
+         mainGroup = "OBJ_5";
+         productRefGroup = "OBJ_177";
+         projectDirPath = ".";
+         targets = (
+            "swift-argument-parser::ArgumentParser",
+            "swift-nio::CNIOAtomics",
+            "swift-nio::CNIODarwin",
+            "swift-nio::CNIOLinux",
+            "swift-nio::CNIOSHA1",
+            "swift-nio::CNIOWindows",
+            "swift-log::Logging",
+            "swift-nio::NIO",
+            "swift-nio::NIOConcurrencyHelpers",
+            "specialtopics::Server",
+            "specialtopics::ServerTests",
+            "specialtopics::specialtopics::ProductTarget",
+            "specialtopics::SwiftPMPackageDescription",
+            "specialtopics::specialtopicsPackageTests::ProductTarget",
+            "swift-argument-parser::SwiftPMPackageDescription",
+            "swift-log::SwiftPMPackageDescription",
+            "swift-nio::SwiftPMPackageDescription"
+         );
+      };
+      "OBJ_10" = {
+         isa = "PBXFileReference";
+         path = "ServerOptions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_100" = {
+         isa = "PBXFileReference";
+         path = "PipeChannel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_101" = {
+         isa = "PBXFileReference";
+         path = "PipePair.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_102" = {
+         isa = "PBXFileReference";
+         path = "PriorityQueue.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_103" = {
+         isa = "PBXFileReference";
+         path = "RecvByteBufferAllocator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_104" = {
+         isa = "PBXFileReference";
+         path = "Resolver.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_105" = {
+         isa = "PBXFileReference";
+         path = "Selectable.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_106" = {
+         isa = "PBXFileReference";
+         path = "SelectableEventLoop.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_107" = {
+         isa = "PBXFileReference";
+         path = "Selector.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_108" = {
+         isa = "PBXFileReference";
+         path = "ServerSocket.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_109" = {
+         isa = "PBXFileReference";
+         path = "SingleStepByteToMessageDecoder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_11" = {
+         isa = "PBXFileReference";
+         path = "main.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_110" = {
+         isa = "PBXFileReference";
+         path = "Socket.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_111" = {
+         isa = "PBXFileReference";
+         path = "SocketAddresses.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_112" = {
+         isa = "PBXFileReference";
+         path = "SocketChannel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_113" = {
+         isa = "PBXFileReference";
+         path = "SocketOptionProvider.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_114" = {
+         isa = "PBXFileReference";
+         path = "SocketProtocols.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_115" = {
+         isa = "PBXFileReference";
+         path = "System.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_116" = {
+         isa = "PBXFileReference";
+         path = "Thread.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_117" = {
+         isa = "PBXFileReference";
+         path = "ThreadPosix.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_118" = {
+         isa = "PBXFileReference";
+         path = "ThreadWindows.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_119" = {
+         isa = "PBXFileReference";
+         path = "TypeAssistedChannelHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_12" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_13"
+         );
+         name = "Tests";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_120" = {
+         isa = "PBXFileReference";
+         path = "UniversalBootstrapSupport.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_121" = {
+         isa = "PBXFileReference";
+         path = "Utilities.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_122" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_123",
+            "OBJ_124",
+            "OBJ_125"
+         );
+         name = "NIOConcurrencyHelpers";
+         path = ".build/checkouts/swift-nio/Sources/NIOConcurrencyHelpers";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_123" = {
+         isa = "PBXFileReference";
+         path = "NIOAtomic.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_124" = {
+         isa = "PBXFileReference";
+         path = "atomics.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_125" = {
+         isa = "PBXFileReference";
+         path = "lock.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_126" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "NIOFoundationCompat";
+         path = ".build/checkouts/swift-nio/Sources/NIOFoundationCompat";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_127" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "NIOHTTP1";
+         path = ".build/checkouts/swift-nio/Sources/NIOHTTP1";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_128" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "NIOTLS";
+         path = ".build/checkouts/swift-nio/Sources/NIOTLS";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_129" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "NIOTestUtils";
+         path = ".build/checkouts/swift-nio/Sources/NIOTestUtils";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_13" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_14"
+         );
+         name = "ServerTests";
+         path = "Tests/ServerTests";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_130" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "NIOWebSocket";
+         path = ".build/checkouts/swift-nio/Sources/NIOWebSocket";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_131" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "_NIO1APIShims";
+         path = ".build/checkouts/swift-nio/Sources/_NIO1APIShims";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_132" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/rvs/Development/Projects/HarvardExtension/SwiftSpecialTopics/.build/checkouts/swift-nio/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_133" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_134",
+            "OBJ_176"
+         );
+         name = "swift-argument-parser 0.3.1";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_134" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_135",
+            "OBJ_140",
+            "OBJ_149",
+            "OBJ_156",
+            "OBJ_167",
+            "OBJ_172"
+         );
+         name = "ArgumentParser";
+         path = ".build/checkouts/swift-argument-parser/Sources/ArgumentParser";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_135" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_136",
+            "OBJ_137",
+            "OBJ_138",
+            "OBJ_139"
+         );
+         name = "Completions";
+         path = "Completions";
+         sourceTree = "<group>";
+      };
+      "OBJ_136" = {
+         isa = "PBXFileReference";
+         path = "BashCompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_137" = {
+         isa = "PBXFileReference";
+         path = "CompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_138" = {
+         isa = "PBXFileReference";
+         path = "FishCompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_139" = {
+         isa = "PBXFileReference";
+         path = "ZshCompletionsGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_14" = {
+         isa = "PBXFileReference";
+         path = "ServerTests.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_140" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_141",
+            "OBJ_142",
+            "OBJ_143",
+            "OBJ_144",
+            "OBJ_145",
+            "OBJ_146",
+            "OBJ_147",
+            "OBJ_148"
+         );
+         name = "Parsable Properties";
+         path = "Parsable Properties";
+         sourceTree = "<group>";
+      };
+      "OBJ_141" = {
+         isa = "PBXFileReference";
+         path = "Argument.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_142" = {
+         isa = "PBXFileReference";
+         path = "ArgumentHelp.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_143" = {
+         isa = "PBXFileReference";
+         path = "CompletionKind.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_144" = {
+         isa = "PBXFileReference";
+         path = "Errors.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_145" = {
+         isa = "PBXFileReference";
+         path = "Flag.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_146" = {
+         isa = "PBXFileReference";
+         path = "NameSpecification.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_147" = {
+         isa = "PBXFileReference";
+         path = "Option.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_148" = {
+         isa = "PBXFileReference";
+         path = "OptionGroup.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_149" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_150",
+            "OBJ_151",
+            "OBJ_152",
+            "OBJ_153",
+            "OBJ_154",
+            "OBJ_155"
+         );
+         name = "Parsable Types";
+         path = "Parsable Types";
+         sourceTree = "<group>";
+      };
+      "OBJ_15" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_16",
+            "OBJ_22",
+            "OBJ_133"
+         );
+         name = "Dependencies";
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_150" = {
+         isa = "PBXFileReference";
+         path = "CommandConfiguration.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_151" = {
+         isa = "PBXFileReference";
+         path = "EnumerableFlag.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_152" = {
+         isa = "PBXFileReference";
+         path = "ExpressibleByArgument.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_153" = {
+         isa = "PBXFileReference";
+         path = "ParsableArguments.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_154" = {
+         isa = "PBXFileReference";
+         path = "ParsableArgumentsValidation.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_155" = {
+         isa = "PBXFileReference";
+         path = "ParsableCommand.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_156" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_157",
+            "OBJ_158",
+            "OBJ_159",
+            "OBJ_160",
+            "OBJ_161",
+            "OBJ_162",
+            "OBJ_163",
+            "OBJ_164",
+            "OBJ_165",
+            "OBJ_166"
+         );
+         name = "Parsing";
+         path = "Parsing";
+         sourceTree = "<group>";
+      };
+      "OBJ_157" = {
+         isa = "PBXFileReference";
+         path = "ArgumentDecoder.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_158" = {
+         isa = "PBXFileReference";
+         path = "ArgumentDefinition.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_159" = {
+         isa = "PBXFileReference";
+         path = "ArgumentSet.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_16" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_17",
+            "OBJ_21"
+         );
+         name = "swift-log 1.4.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_160" = {
+         isa = "PBXFileReference";
+         path = "CommandParser.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_161" = {
+         isa = "PBXFileReference";
+         path = "InputOrigin.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_162" = {
+         isa = "PBXFileReference";
+         path = "Name.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_163" = {
+         isa = "PBXFileReference";
+         path = "Parsed.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_164" = {
+         isa = "PBXFileReference";
+         path = "ParsedValues.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_165" = {
+         isa = "PBXFileReference";
+         path = "ParserError.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_166" = {
+         isa = "PBXFileReference";
+         path = "SplitArguments.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_167" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_168",
+            "OBJ_169",
+            "OBJ_170",
+            "OBJ_171"
+         );
+         name = "Usage";
+         path = "Usage";
+         sourceTree = "<group>";
+      };
+      "OBJ_168" = {
+         isa = "PBXFileReference";
+         path = "HelpCommand.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_169" = {
+         isa = "PBXFileReference";
+         path = "HelpGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_17" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_18",
+            "OBJ_19",
+            "OBJ_20"
+         );
+         name = "Logging";
+         path = ".build/checkouts/swift-log/Sources/Logging";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_170" = {
+         isa = "PBXFileReference";
+         path = "MessageInfo.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_171" = {
+         isa = "PBXFileReference";
+         path = "UsageGenerator.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_172" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_173",
+            "OBJ_174",
+            "OBJ_175"
+         );
+         name = "Utilities";
+         path = "Utilities";
+         sourceTree = "<group>";
+      };
+      "OBJ_173" = {
+         isa = "PBXFileReference";
+         path = "SequenceExtensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_174" = {
+         isa = "PBXFileReference";
+         path = "StringExtensions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_175" = {
+         isa = "PBXFileReference";
+         path = "Tree.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_176" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/rvs/Development/Projects/HarvardExtension/SwiftSpecialTopics/.build/checkouts/swift-argument-parser/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_177" = {
+         isa = "PBXGroup";
+         children = (
+            "specialtopics::Server::Product",
+            "swift-log::Logging::Product",
+            "swift-nio::CNIOWindows::Product",
+            "swift-nio::CNIOSHA1::Product",
+            "swift-nio::CNIODarwin::Product",
+            "swift-nio::NIO::Product",
+            "swift-argument-parser::ArgumentParser::Product",
+            "swift-nio::CNIOAtomics::Product",
+            "specialtopics::ServerTests::Product",
+            "swift-nio::NIOConcurrencyHelpers::Product",
+            "swift-nio::CNIOLinux::Product"
+         );
+         name = "Products";
+         path = "";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "OBJ_18" = {
+         isa = "PBXFileReference";
+         path = "Locks.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_189" = {
+         isa = "PBXFileReference";
+         path = "LICENSE";
+         sourceTree = "<group>";
+      };
+      "OBJ_19" = {
+         isa = "PBXFileReference";
+         path = "LogHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_190" = {
+         isa = "PBXFileReference";
+         path = "README.md";
+         sourceTree = "<group>";
+      };
+      "OBJ_191" = {
+         isa = "PBXFileReference";
+         path = "build-armv7.sh";
+         sourceTree = "<group>";
+      };
+      "OBJ_192" = {
+         isa = "PBXFileReference";
+         path = "Dockerfile-armv7";
+         sourceTree = "<group>";
+      };
+      "OBJ_194" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_195",
+            "OBJ_196"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_195" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/ArgumentParser_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "ArgumentParser";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_196" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/ArgumentParser_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "ArgumentParser";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "ArgumentParser";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_197" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_198",
+            "OBJ_199",
+            "OBJ_200",
+            "OBJ_201",
+            "OBJ_202",
+            "OBJ_203",
+            "OBJ_204",
+            "OBJ_205",
+            "OBJ_206",
+            "OBJ_207",
+            "OBJ_208",
+            "OBJ_209",
+            "OBJ_210",
+            "OBJ_211",
+            "OBJ_212",
+            "OBJ_213",
+            "OBJ_214",
+            "OBJ_215",
+            "OBJ_216",
+            "OBJ_217",
+            "OBJ_218",
+            "OBJ_219",
+            "OBJ_220",
+            "OBJ_221",
+            "OBJ_222",
+            "OBJ_223",
+            "OBJ_224",
+            "OBJ_225",
+            "OBJ_226",
+            "OBJ_227",
+            "OBJ_228",
+            "OBJ_229",
+            "OBJ_230",
+            "OBJ_231",
+            "OBJ_232"
+         );
+      };
+      "OBJ_198" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_136";
+      };
+      "OBJ_199" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_137";
+      };
+      "OBJ_2" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_3",
+            "OBJ_4"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_20" = {
+         isa = "PBXFileReference";
+         path = "Logging.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_200" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_138";
+      };
+      "OBJ_201" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_139";
+      };
+      "OBJ_202" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_141";
+      };
+      "OBJ_203" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_142";
+      };
+      "OBJ_204" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_143";
+      };
+      "OBJ_205" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_144";
+      };
+      "OBJ_206" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_145";
+      };
+      "OBJ_207" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_146";
+      };
+      "OBJ_208" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_147";
+      };
+      "OBJ_209" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_148";
+      };
+      "OBJ_21" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         name = "Package.swift";
+         path = "/Users/rvs/Development/Projects/HarvardExtension/SwiftSpecialTopics/.build/checkouts/swift-log/Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_210" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_150";
+      };
+      "OBJ_211" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_151";
+      };
+      "OBJ_212" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_152";
+      };
+      "OBJ_213" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_153";
+      };
+      "OBJ_214" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_154";
+      };
+      "OBJ_215" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_155";
+      };
+      "OBJ_216" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_157";
+      };
+      "OBJ_217" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_158";
+      };
+      "OBJ_218" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_159";
+      };
+      "OBJ_219" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_160";
+      };
+      "OBJ_22" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_23",
+            "OBJ_29",
+            "OBJ_33",
+            "OBJ_34",
+            "OBJ_40",
+            "OBJ_44",
+            "OBJ_50",
+            "OBJ_122",
+            "OBJ_126",
+            "OBJ_127",
+            "OBJ_128",
+            "OBJ_129",
+            "OBJ_130",
+            "OBJ_131",
+            "OBJ_132"
+         );
+         name = "swift-nio 2.23.0";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_220" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_161";
+      };
+      "OBJ_221" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_162";
+      };
+      "OBJ_222" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_163";
+      };
+      "OBJ_223" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_164";
+      };
+      "OBJ_224" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_165";
+      };
+      "OBJ_225" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_166";
+      };
+      "OBJ_226" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_168";
+      };
+      "OBJ_227" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_169";
+      };
+      "OBJ_228" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_170";
+      };
+      "OBJ_229" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_171";
+      };
+      "OBJ_23" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_24",
+            "OBJ_27"
+         );
+         name = "CNIOAtomics";
+         path = ".build/checkouts/swift-nio/Sources/CNIOAtomics";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_230" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_173";
+      };
+      "OBJ_231" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_174";
+      };
+      "OBJ_232" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_175";
+      };
+      "OBJ_233" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_235" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_236",
+            "OBJ_237"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_236" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOAtomics_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOAtomics";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOAtomics";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_237" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOAtomics_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOAtomics";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOAtomics";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_238" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_239",
+            "OBJ_240"
+         );
+      };
+      "OBJ_239" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_25";
+      };
+      "OBJ_24" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_25",
+            "OBJ_26"
+         );
+         name = "src";
+         path = "src";
+         sourceTree = "<group>";
+      };
+      "OBJ_240" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_26";
+      };
+      "OBJ_241" = {
+         isa = "PBXHeadersBuildPhase";
+         files = (
+            "OBJ_242"
+         );
+      };
+      "OBJ_242" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_28";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_243" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_245" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_246",
+            "OBJ_247"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_246" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIODarwin_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIODarwin";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIODarwin";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_247" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIODarwin_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIODarwin";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIODarwin";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_248" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_249"
+         );
+      };
+      "OBJ_249" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_30";
+      };
+      "OBJ_25" = {
+         isa = "PBXFileReference";
+         path = "c-atomics.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_250" = {
+         isa = "PBXHeadersBuildPhase";
+         files = (
+            "OBJ_251"
+         );
+      };
+      "OBJ_251" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_32";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_252" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_254" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_255",
+            "OBJ_256"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_255" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOLinux_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOLinux";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOLinux";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_256" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOLinux_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOLinux";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOLinux";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_257" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_258",
+            "OBJ_259"
+         );
+      };
+      "OBJ_258" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_35";
+      };
+      "OBJ_259" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_36";
+      };
+      "OBJ_26" = {
+         isa = "PBXFileReference";
+         path = "c-nioatomics.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_260" = {
+         isa = "PBXHeadersBuildPhase";
+         files = (
+            "OBJ_261",
+            "OBJ_262"
+         );
+      };
+      "OBJ_261" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_38";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_262" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_39";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_263" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_265" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_266",
+            "OBJ_267"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_266" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOSHA1_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOSHA1";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOSHA1";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_267" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            DEFINES_MODULE = "YES";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOSHA1_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOSHA1";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOSHA1";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_268" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_269"
+         );
+      };
+      "OBJ_269" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_41";
+      };
+      "OBJ_27" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_28"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_270" = {
+         isa = "PBXHeadersBuildPhase";
+         files = (
+            "OBJ_271"
+         );
+      };
+      "OBJ_271" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_43";
+         settings = {
+            ATTRIBUTES = (
+               "Public"
+            );
+         };
+      };
+      "OBJ_272" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_274" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_275",
+            "OBJ_276"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_275" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOWindows_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOWindows";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOWindows";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_276" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            DEFINES_MODULE = "NO";
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/CNIOWindows_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "CNIOWindows";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            TARGET_NAME = "CNIOWindows";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_277" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_278",
+            "OBJ_279"
+         );
+      };
+      "OBJ_278" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_45";
+      };
+      "OBJ_279" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_46";
+      };
+      "OBJ_28" = {
+         isa = "PBXFileReference";
+         path = "CNIOAtomics.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_280" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_282" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_283",
+            "OBJ_284"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_283" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/Logging_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Logging";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Logging";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_284" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/Logging_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "Logging";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Logging";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_285" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_286",
+            "OBJ_287",
+            "OBJ_288"
+         );
+      };
+      "OBJ_286" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_18";
+      };
+      "OBJ_287" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_19";
+      };
+      "OBJ_288" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_20";
+      };
+      "OBJ_289" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+         );
+      };
+      "OBJ_29" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_30",
+            "OBJ_31"
+         );
+         name = "CNIODarwin";
+         path = ".build/checkouts/swift-nio/Sources/CNIODarwin";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_291" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_292",
+            "OBJ_293"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_292" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/NIO_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "NIO";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "NIO";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_293" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/NIO_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "NIO";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "NIO";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_294" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_295",
+            "OBJ_296",
+            "OBJ_297",
+            "OBJ_298",
+            "OBJ_299",
+            "OBJ_300",
+            "OBJ_301",
+            "OBJ_302",
+            "OBJ_303",
+            "OBJ_304",
+            "OBJ_305",
+            "OBJ_306",
+            "OBJ_307",
+            "OBJ_308",
+            "OBJ_309",
+            "OBJ_310",
+            "OBJ_311",
+            "OBJ_312",
+            "OBJ_313",
+            "OBJ_314",
+            "OBJ_315",
+            "OBJ_316",
+            "OBJ_317",
+            "OBJ_318",
+            "OBJ_319",
+            "OBJ_320",
+            "OBJ_321",
+            "OBJ_322",
+            "OBJ_323",
+            "OBJ_324",
+            "OBJ_325",
+            "OBJ_326",
+            "OBJ_327",
+            "OBJ_328",
+            "OBJ_329",
+            "OBJ_330",
+            "OBJ_331",
+            "OBJ_332",
+            "OBJ_333",
+            "OBJ_334",
+            "OBJ_335",
+            "OBJ_336",
+            "OBJ_337",
+            "OBJ_338",
+            "OBJ_339",
+            "OBJ_340",
+            "OBJ_341",
+            "OBJ_342",
+            "OBJ_343",
+            "OBJ_344",
+            "OBJ_345",
+            "OBJ_346",
+            "OBJ_347",
+            "OBJ_348",
+            "OBJ_349",
+            "OBJ_350",
+            "OBJ_351",
+            "OBJ_352",
+            "OBJ_353",
+            "OBJ_354",
+            "OBJ_355",
+            "OBJ_356",
+            "OBJ_357",
+            "OBJ_358",
+            "OBJ_359",
+            "OBJ_360",
+            "OBJ_361",
+            "OBJ_362",
+            "OBJ_363",
+            "OBJ_364",
+            "OBJ_365"
+         );
+      };
+      "OBJ_295" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_51";
+      };
+      "OBJ_296" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_52";
+      };
+      "OBJ_297" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_53";
+      };
+      "OBJ_298" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_54";
+      };
+      "OBJ_299" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_55";
+      };
+      "OBJ_3" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "NO";
+            DEBUG_INFORMATION_FORMAT = "dwarf";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            ENABLE_NS_ASSERTIONS = "YES";
+            GCC_OPTIMIZATION_LEVEL = "0";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1",
+               "DEBUG=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            ONLY_ACTIVE_ARCH = "YES";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE",
+               "DEBUG"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Debug";
+      };
+      "OBJ_30" = {
+         isa = "PBXFileReference";
+         path = "shim.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_300" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_56";
+      };
+      "OBJ_301" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_57";
+      };
+      "OBJ_302" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_58";
+      };
+      "OBJ_303" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_59";
+      };
+      "OBJ_304" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_60";
+      };
+      "OBJ_305" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_61";
+      };
+      "OBJ_306" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_62";
+      };
+      "OBJ_307" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_63";
+      };
+      "OBJ_308" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_64";
+      };
+      "OBJ_309" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_65";
+      };
+      "OBJ_31" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_32"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_310" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_66";
+      };
+      "OBJ_311" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_67";
+      };
+      "OBJ_312" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_68";
+      };
+      "OBJ_313" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_69";
+      };
+      "OBJ_314" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_70";
+      };
+      "OBJ_315" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_71";
+      };
+      "OBJ_316" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_72";
+      };
+      "OBJ_317" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_73";
+      };
+      "OBJ_318" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_74";
+      };
+      "OBJ_319" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_75";
+      };
+      "OBJ_32" = {
+         isa = "PBXFileReference";
+         path = "CNIODarwin.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_320" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_76";
+      };
+      "OBJ_321" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_77";
+      };
+      "OBJ_322" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_78";
+      };
+      "OBJ_323" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_79";
+      };
+      "OBJ_324" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_80";
+      };
+      "OBJ_325" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_81";
+      };
+      "OBJ_326" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_82";
+      };
+      "OBJ_327" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_83";
+      };
+      "OBJ_328" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_84";
+      };
+      "OBJ_329" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_85";
+      };
+      "OBJ_33" = {
+         isa = "PBXGroup";
+         children = (
+         );
+         name = "CNIOHTTPParser";
+         path = ".build/checkouts/swift-nio/Sources/CNIOHTTPParser";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_330" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_86";
+      };
+      "OBJ_331" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_87";
+      };
+      "OBJ_332" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_88";
+      };
+      "OBJ_333" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_89";
+      };
+      "OBJ_334" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_90";
+      };
+      "OBJ_335" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_91";
+      };
+      "OBJ_336" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_92";
+      };
+      "OBJ_337" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_93";
+      };
+      "OBJ_338" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_94";
+      };
+      "OBJ_339" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_95";
+      };
+      "OBJ_34" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_35",
+            "OBJ_36",
+            "OBJ_37"
+         );
+         name = "CNIOLinux";
+         path = ".build/checkouts/swift-nio/Sources/CNIOLinux";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_340" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_96";
+      };
+      "OBJ_341" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_97";
+      };
+      "OBJ_342" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_98";
+      };
+      "OBJ_343" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_99";
+      };
+      "OBJ_344" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_100";
+      };
+      "OBJ_345" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_101";
+      };
+      "OBJ_346" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_102";
+      };
+      "OBJ_347" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_103";
+      };
+      "OBJ_348" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_104";
+      };
+      "OBJ_349" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_105";
+      };
+      "OBJ_35" = {
+         isa = "PBXFileReference";
+         path = "ifaddrs-android.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_350" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_106";
+      };
+      "OBJ_351" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_107";
+      };
+      "OBJ_352" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_108";
+      };
+      "OBJ_353" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_109";
+      };
+      "OBJ_354" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_110";
+      };
+      "OBJ_355" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_111";
+      };
+      "OBJ_356" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_112";
+      };
+      "OBJ_357" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_113";
+      };
+      "OBJ_358" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_114";
+      };
+      "OBJ_359" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_115";
+      };
+      "OBJ_36" = {
+         isa = "PBXFileReference";
+         path = "shim.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_360" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_116";
+      };
+      "OBJ_361" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_117";
+      };
+      "OBJ_362" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_118";
+      };
+      "OBJ_363" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_119";
+      };
+      "OBJ_364" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_120";
+      };
+      "OBJ_365" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_121";
+      };
+      "OBJ_366" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_367",
+            "OBJ_368",
+            "OBJ_369",
+            "OBJ_370",
+            "OBJ_371",
+            "OBJ_372"
+         );
+      };
+      "OBJ_367" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOSHA1::Product";
+      };
+      "OBJ_368" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::NIOConcurrencyHelpers::Product";
+      };
+      "OBJ_369" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOAtomics::Product";
+      };
+      "OBJ_37" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_38",
+            "OBJ_39"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_370" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOWindows::Product";
+      };
+      "OBJ_371" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIODarwin::Product";
+      };
+      "OBJ_372" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOLinux::Product";
+      };
+      "OBJ_373" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOSHA1";
+      };
+      "OBJ_374" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::NIOConcurrencyHelpers";
+      };
+      "OBJ_376" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOAtomics";
+      };
+      "OBJ_377" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOWindows";
+      };
+      "OBJ_378" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIODarwin";
+      };
+      "OBJ_379" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOLinux";
+      };
+      "OBJ_38" = {
+         isa = "PBXFileReference";
+         path = "CNIOLinux.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_380" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_381",
+            "OBJ_382"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_381" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/NIOConcurrencyHelpers_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "NIOConcurrencyHelpers";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "NIOConcurrencyHelpers";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_382" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            ENABLE_TESTABILITY = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/NIOConcurrencyHelpers_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)"
+            );
+            PRODUCT_BUNDLE_IDENTIFIER = "NIOConcurrencyHelpers";
+            PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+            PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+            SKIP_INSTALL = "YES";
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "NIOConcurrencyHelpers";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_383" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_384",
+            "OBJ_385",
+            "OBJ_386"
+         );
+      };
+      "OBJ_384" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_123";
+      };
+      "OBJ_385" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_124";
+      };
+      "OBJ_386" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_125";
+      };
+      "OBJ_387" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_388"
+         );
+      };
+      "OBJ_388" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOAtomics::Product";
+      };
+      "OBJ_389" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOAtomics";
+      };
+      "OBJ_39" = {
+         isa = "PBXFileReference";
+         path = "ifaddrs-android.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_391" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_392",
+            "OBJ_393"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_392" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/Server_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.14";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Server";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_393" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/Server_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "9.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+               "@executable_path"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.14";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_FORCE_DYNAMIC_LINK_STDLIB = "YES";
+            SWIFT_FORCE_STATIC_LINK_STDLIB = "NO";
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "Server";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_394" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_395",
+            "OBJ_396",
+            "OBJ_397"
+         );
+      };
+      "OBJ_395" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_9";
+      };
+      "OBJ_396" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_10";
+      };
+      "OBJ_397" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_11";
+      };
+      "OBJ_398" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_399",
+            "OBJ_400",
+            "OBJ_401",
+            "OBJ_402",
+            "OBJ_403",
+            "OBJ_404",
+            "OBJ_405",
+            "OBJ_406",
+            "OBJ_407"
+         );
+      };
+      "OBJ_399" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::NIO::Product";
+      };
+      "OBJ_4" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_OBJC_ARC = "YES";
+            COMBINE_HIDPI_IMAGES = "YES";
+            COPY_PHASE_STRIP = "YES";
+            DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+            DYLIB_INSTALL_NAME_BASE = "@rpath";
+            GCC_OPTIMIZATION_LEVEL = "s";
+            GCC_PREPROCESSOR_DEFINITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE=1"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.10";
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-DXcode"
+            );
+            PRODUCT_NAME = "$(TARGET_NAME)";
+            SDKROOT = "macosx";
+            SUPPORTED_PLATFORMS = (
+               "macosx",
+               "iphoneos",
+               "iphonesimulator",
+               "appletvos",
+               "appletvsimulator",
+               "watchos",
+               "watchsimulator"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)",
+               "SWIFT_PACKAGE"
+            );
+            SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+            USE_HEADERMAP = "NO";
+         };
+         name = "Release";
+      };
+      "OBJ_40" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_41",
+            "OBJ_42"
+         );
+         name = "CNIOSHA1";
+         path = ".build/checkouts/swift-nio/Sources/CNIOSHA1";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_400" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOSHA1::Product";
+      };
+      "OBJ_401" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::NIOConcurrencyHelpers::Product";
+      };
+      "OBJ_402" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOAtomics::Product";
+      };
+      "OBJ_403" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOWindows::Product";
+      };
+      "OBJ_404" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIODarwin::Product";
+      };
+      "OBJ_405" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOLinux::Product";
+      };
+      "OBJ_406" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-log::Logging::Product";
+      };
+      "OBJ_407" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
+      };
+      "OBJ_408" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::NIO";
+      };
+      "OBJ_409" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOSHA1";
+      };
+      "OBJ_41" = {
+         isa = "PBXFileReference";
+         path = "c_nio_sha1.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_410" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::NIOConcurrencyHelpers";
+      };
+      "OBJ_411" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOAtomics";
+      };
+      "OBJ_412" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOWindows";
+      };
+      "OBJ_413" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIODarwin";
+      };
+      "OBJ_414" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOLinux";
+      };
+      "OBJ_415" = {
+         isa = "PBXTargetDependency";
+         target = "swift-log::Logging";
+      };
+      "OBJ_416" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
+      };
+      "OBJ_418" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_419",
+            "OBJ_420"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_419" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/ServerTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "ServerTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_42" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_43"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_420" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            CLANG_ENABLE_MODULES = "YES";
+            EMBEDDED_CONTENT_CONTAINS_SWIFT = "YES";
+            FRAMEWORK_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(PLATFORM_DIR)/Developer/Library/Frameworks"
+            );
+            HEADER_SEARCH_PATHS = (
+               "$(inherited)",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOSHA1/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOAtomics/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIODarwin/include",
+               "$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOLinux/include"
+            );
+            INFOPLIST_FILE = "specialtopics.xcodeproj/ServerTests_Info.plist";
+            IPHONEOS_DEPLOYMENT_TARGET = "14.0";
+            LD_RUNPATH_SEARCH_PATHS = (
+               "$(inherited)",
+               "@loader_path/../Frameworks",
+               "@loader_path/Frameworks"
+            );
+            MACOSX_DEPLOYMENT_TARGET = "10.15";
+            OTHER_CFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_LDFLAGS = (
+               "$(inherited)"
+            );
+            OTHER_SWIFT_FLAGS = (
+               "$(inherited)",
+               "-Xcc",
+               "-fmodule-map-file=$(SRCROOT)/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap"
+            );
+            SWIFT_ACTIVE_COMPILATION_CONDITIONS = (
+               "$(inherited)"
+            );
+            SWIFT_VERSION = "5.0";
+            TARGET_NAME = "ServerTests";
+            TVOS_DEPLOYMENT_TARGET = "9.0";
+            WATCHOS_DEPLOYMENT_TARGET = "2.0";
+         };
+         name = "Release";
+      };
+      "OBJ_421" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_422"
+         );
+      };
+      "OBJ_422" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_14";
+      };
+      "OBJ_423" = {
+         isa = "PBXFrameworksBuildPhase";
+         files = (
+            "OBJ_424",
+            "OBJ_425",
+            "OBJ_426",
+            "OBJ_427",
+            "OBJ_428",
+            "OBJ_429",
+            "OBJ_430",
+            "OBJ_431",
+            "OBJ_432"
+         );
+      };
+      "OBJ_424" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::NIO::Product";
+      };
+      "OBJ_425" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOSHA1::Product";
+      };
+      "OBJ_426" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::NIOConcurrencyHelpers::Product";
+      };
+      "OBJ_427" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOAtomics::Product";
+      };
+      "OBJ_428" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOWindows::Product";
+      };
+      "OBJ_429" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIODarwin::Product";
+      };
+      "OBJ_43" = {
+         isa = "PBXFileReference";
+         path = "CNIOSHA1.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_430" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-nio::CNIOLinux::Product";
+      };
+      "OBJ_431" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-log::Logging::Product";
+      };
+      "OBJ_432" = {
+         isa = "PBXBuildFile";
+         fileRef = "swift-argument-parser::ArgumentParser::Product";
+      };
+      "OBJ_433" = {
+         isa = "PBXTargetDependency";
+         target = "specialtopics::Server";
+      };
+      "OBJ_434" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::NIO";
+      };
+      "OBJ_435" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOSHA1";
+      };
+      "OBJ_436" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::NIOConcurrencyHelpers";
+      };
+      "OBJ_437" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOAtomics";
+      };
+      "OBJ_438" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOWindows";
+      };
+      "OBJ_439" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIODarwin";
+      };
+      "OBJ_44" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_45",
+            "OBJ_46",
+            "OBJ_47"
+         );
+         name = "CNIOWindows";
+         path = ".build/checkouts/swift-nio/Sources/CNIOWindows";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_440" = {
+         isa = "PBXTargetDependency";
+         target = "swift-nio::CNIOLinux";
+      };
+      "OBJ_441" = {
+         isa = "PBXTargetDependency";
+         target = "swift-log::Logging";
+      };
+      "OBJ_442" = {
+         isa = "PBXTargetDependency";
+         target = "swift-argument-parser::ArgumentParser";
+      };
+      "OBJ_444" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_445",
+            "OBJ_446"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_445" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_446" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_447" = {
+         isa = "PBXTargetDependency";
+         target = "specialtopics::Server";
+      };
+      "OBJ_449" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_450",
+            "OBJ_451"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_45" = {
+         isa = "PBXFileReference";
+         path = "WSAStartup.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_450" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_451" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_452" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_453"
+         );
+      };
+      "OBJ_453" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_6";
+      };
+      "OBJ_455" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_456",
+            "OBJ_457"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_456" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Debug";
+      };
+      "OBJ_457" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+         };
+         name = "Release";
+      };
+      "OBJ_458" = {
+         isa = "PBXTargetDependency";
+         target = "specialtopics::ServerTests";
+      };
+      "OBJ_46" = {
+         isa = "PBXFileReference";
+         path = "shim.c";
+         sourceTree = "<group>";
+      };
+      "OBJ_460" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_461",
+            "OBJ_462"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_461" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_462" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.2.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_463" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_464"
+         );
+      };
+      "OBJ_464" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_176";
+      };
+      "OBJ_466" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_467",
+            "OBJ_468"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_467" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_468" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_469" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_470"
+         );
+      };
+      "OBJ_47" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_48",
+            "OBJ_49"
+         );
+         name = "include";
+         path = "include";
+         sourceTree = "<group>";
+      };
+      "OBJ_470" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_21";
+      };
+      "OBJ_472" = {
+         isa = "XCConfigurationList";
+         buildConfigurations = (
+            "OBJ_473",
+            "OBJ_474"
+         );
+         defaultConfigurationIsVisible = "0";
+         defaultConfigurationName = "Release";
+      };
+      "OBJ_473" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Debug";
+      };
+      "OBJ_474" = {
+         isa = "XCBuildConfiguration";
+         buildSettings = {
+            LD = "/usr/bin/true";
+            OTHER_SWIFT_FLAGS = (
+               "-swift-version",
+               "5",
+               "-I",
+               "$(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2",
+               "-sdk",
+               "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk",
+               "-package-description-version",
+               "5.0.0"
+            );
+            SWIFT_VERSION = "5.0";
+         };
+         name = "Release";
+      };
+      "OBJ_475" = {
+         isa = "PBXSourcesBuildPhase";
+         files = (
+            "OBJ_476"
+         );
+      };
+      "OBJ_476" = {
+         isa = "PBXBuildFile";
+         fileRef = "OBJ_132";
+      };
+      "OBJ_48" = {
+         isa = "PBXFileReference";
+         path = "CNIOWindows.h";
+         sourceTree = "<group>";
+      };
+      "OBJ_49" = {
+         isa = "PBXFileReference";
+         name = "module.modulemap";
+         path = "/Users/rvs/Development/Projects/HarvardExtension/SwiftSpecialTopics/.build/checkouts/swift-nio/Sources/CNIOWindows/include/module.modulemap";
+         sourceTree = "<group>";
+      };
+      "OBJ_5" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_6",
+            "OBJ_7",
+            "OBJ_12",
+            "OBJ_15",
+            "OBJ_177",
+            "OBJ_189",
+            "OBJ_190",
+            "OBJ_191",
+            "OBJ_192"
+         );
+         path = "";
+         sourceTree = "<group>";
+      };
+      "OBJ_50" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_51",
+            "OBJ_52",
+            "OBJ_53",
+            "OBJ_54",
+            "OBJ_55",
+            "OBJ_56",
+            "OBJ_57",
+            "OBJ_58",
+            "OBJ_59",
+            "OBJ_60",
+            "OBJ_61",
+            "OBJ_62",
+            "OBJ_63",
+            "OBJ_64",
+            "OBJ_65",
+            "OBJ_66",
+            "OBJ_67",
+            "OBJ_68",
+            "OBJ_69",
+            "OBJ_70",
+            "OBJ_71",
+            "OBJ_72",
+            "OBJ_73",
+            "OBJ_74",
+            "OBJ_75",
+            "OBJ_76",
+            "OBJ_77",
+            "OBJ_78",
+            "OBJ_79",
+            "OBJ_80",
+            "OBJ_81",
+            "OBJ_82",
+            "OBJ_83",
+            "OBJ_84",
+            "OBJ_85",
+            "OBJ_86",
+            "OBJ_87",
+            "OBJ_88",
+            "OBJ_89",
+            "OBJ_90",
+            "OBJ_91",
+            "OBJ_92",
+            "OBJ_93",
+            "OBJ_94",
+            "OBJ_95",
+            "OBJ_96",
+            "OBJ_97",
+            "OBJ_98",
+            "OBJ_99",
+            "OBJ_100",
+            "OBJ_101",
+            "OBJ_102",
+            "OBJ_103",
+            "OBJ_104",
+            "OBJ_105",
+            "OBJ_106",
+            "OBJ_107",
+            "OBJ_108",
+            "OBJ_109",
+            "OBJ_110",
+            "OBJ_111",
+            "OBJ_112",
+            "OBJ_113",
+            "OBJ_114",
+            "OBJ_115",
+            "OBJ_116",
+            "OBJ_117",
+            "OBJ_118",
+            "OBJ_119",
+            "OBJ_120",
+            "OBJ_121"
+         );
+         name = "NIO";
+         path = ".build/checkouts/swift-nio/Sources/NIO";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_51" = {
+         isa = "PBXFileReference";
+         path = "AddressedEnvelope.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_52" = {
+         isa = "PBXFileReference";
+         path = "BSDSocketAPI.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_53" = {
+         isa = "PBXFileReference";
+         path = "BSDSocketAPIPosix.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_54" = {
+         isa = "PBXFileReference";
+         path = "BSDSocketAPIWindows.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_55" = {
+         isa = "PBXFileReference";
+         path = "BaseSocket.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_56" = {
+         isa = "PBXFileReference";
+         path = "BaseSocketChannel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_57" = {
+         isa = "PBXFileReference";
+         path = "BaseStreamSocketChannel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_58" = {
+         isa = "PBXFileReference";
+         path = "Bootstrap.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_59" = {
+         isa = "PBXFileReference";
+         path = "ByteBuffer-aux.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_6" = {
+         isa = "PBXFileReference";
+         explicitFileType = "sourcecode.swift";
+         path = "Package.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_60" = {
+         isa = "PBXFileReference";
+         path = "ByteBuffer-conversions.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_61" = {
+         isa = "PBXFileReference";
+         path = "ByteBuffer-core.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_62" = {
+         isa = "PBXFileReference";
+         path = "ByteBuffer-int.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_63" = {
+         isa = "PBXFileReference";
+         path = "ByteBuffer-views.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_64" = {
+         isa = "PBXFileReference";
+         path = "Channel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_65" = {
+         isa = "PBXFileReference";
+         path = "ChannelHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_66" = {
+         isa = "PBXFileReference";
+         path = "ChannelHandlers.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_67" = {
+         isa = "PBXFileReference";
+         path = "ChannelInvoker.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_68" = {
+         isa = "PBXFileReference";
+         path = "ChannelOption.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_69" = {
+         isa = "PBXFileReference";
+         path = "ChannelPipeline.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_7" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_8"
+         );
+         name = "Sources";
+         path = "";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_70" = {
+         isa = "PBXFileReference";
+         path = "CircularBuffer.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_71" = {
+         isa = "PBXFileReference";
+         path = "Codec.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_72" = {
+         isa = "PBXFileReference";
+         path = "ControlMessage.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_73" = {
+         isa = "PBXFileReference";
+         path = "ConvenienceOptionSupport.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_74" = {
+         isa = "PBXFileReference";
+         path = "DatagramVectorReadManager.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_75" = {
+         isa = "PBXFileReference";
+         path = "DeadChannel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_76" = {
+         isa = "PBXFileReference";
+         path = "DispathQueue+WithFuture.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_77" = {
+         isa = "PBXFileReference";
+         path = "Embedded.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_78" = {
+         isa = "PBXFileReference";
+         path = "EventLoop.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_79" = {
+         isa = "PBXFileReference";
+         path = "EventLoopFuture.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_8" = {
+         isa = "PBXGroup";
+         children = (
+            "OBJ_9",
+            "OBJ_10",
+            "OBJ_11"
+         );
+         name = "Server";
+         path = "Sources/Server";
+         sourceTree = "SOURCE_ROOT";
+      };
+      "OBJ_80" = {
+         isa = "PBXFileReference";
+         path = "FileDescriptor.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_81" = {
+         isa = "PBXFileReference";
+         path = "FileHandle.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_82" = {
+         isa = "PBXFileReference";
+         path = "FileRegion.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_83" = {
+         isa = "PBXFileReference";
+         path = "GetaddrinfoResolver.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_84" = {
+         isa = "PBXFileReference";
+         path = "HappyEyeballs.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_85" = {
+         isa = "PBXFileReference";
+         path = "Heap.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_86" = {
+         isa = "PBXFileReference";
+         path = "IO.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_87" = {
+         isa = "PBXFileReference";
+         path = "IOData.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_88" = {
+         isa = "PBXFileReference";
+         path = "IntegerTypes.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_89" = {
+         isa = "PBXFileReference";
+         path = "Interfaces.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_9" = {
+         isa = "PBXFileReference";
+         path = "Logger.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_90" = {
+         isa = "PBXFileReference";
+         path = "Linux.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_91" = {
+         isa = "PBXFileReference";
+         path = "LinuxCPUSet.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_92" = {
+         isa = "PBXFileReference";
+         path = "MarkedCircularBuffer.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_93" = {
+         isa = "PBXFileReference";
+         path = "MulticastChannel.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_94" = {
+         isa = "PBXFileReference";
+         path = "NIOAny.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_95" = {
+         isa = "PBXFileReference";
+         path = "NIOCloseOnErrorHandler.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_96" = {
+         isa = "PBXFileReference";
+         path = "NIOThreadPool.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_97" = {
+         isa = "PBXFileReference";
+         path = "NonBlockingFileIO.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_98" = {
+         isa = "PBXFileReference";
+         path = "PendingDatagramWritesManager.swift";
+         sourceTree = "<group>";
+      };
+      "OBJ_99" = {
+         isa = "PBXFileReference";
+         path = "PendingWritesManager.swift";
+         sourceTree = "<group>";
+      };
+      "specialtopics::Server" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_391";
+         buildPhases = (
+            "OBJ_394",
+            "OBJ_398"
+         );
+         dependencies = (
+            "OBJ_408",
+            "OBJ_409",
+            "OBJ_410",
+            "OBJ_411",
+            "OBJ_412",
+            "OBJ_413",
+            "OBJ_414",
+            "OBJ_415",
+            "OBJ_416"
+         );
+         name = "Server";
+         productName = "Server";
+         productReference = "specialtopics::Server::Product";
+         productType = "com.apple.product-type.tool";
+      };
+      "specialtopics::Server::Product" = {
+         isa = "PBXFileReference";
+         path = "Server";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "specialtopics::ServerTests" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_418";
+         buildPhases = (
+            "OBJ_421",
+            "OBJ_423"
+         );
+         dependencies = (
+            "OBJ_433",
+            "OBJ_434",
+            "OBJ_435",
+            "OBJ_436",
+            "OBJ_437",
+            "OBJ_438",
+            "OBJ_439",
+            "OBJ_440",
+            "OBJ_441",
+            "OBJ_442"
+         );
+         name = "ServerTests";
+         productName = "ServerTests";
+         productReference = "specialtopics::ServerTests::Product";
+         productType = "com.apple.product-type.bundle.unit-test";
+      };
+      "specialtopics::ServerTests::Product" = {
+         isa = "PBXFileReference";
+         path = "ServerTests.xctest";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "specialtopics::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_449";
+         buildPhases = (
+            "OBJ_452"
+         );
+         dependencies = (
+         );
+         name = "specialtopicsPackageDescription";
+         productName = "specialtopicsPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "specialtopics::specialtopics::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_444";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_447"
+         );
+         name = "specialtopics";
+         productName = "specialtopics";
+      };
+      "specialtopics::specialtopicsPackageTests::ProductTarget" = {
+         isa = "PBXAggregateTarget";
+         buildConfigurationList = "OBJ_455";
+         buildPhases = (
+         );
+         dependencies = (
+            "OBJ_458"
+         );
+         name = "specialtopicsPackageTests";
+         productName = "specialtopicsPackageTests";
+      };
+      "swift-argument-parser::ArgumentParser" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_194";
+         buildPhases = (
+            "OBJ_197",
+            "OBJ_233"
+         );
+         dependencies = (
+         );
+         name = "ArgumentParser";
+         productName = "ArgumentParser";
+         productReference = "swift-argument-parser::ArgumentParser::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-argument-parser::ArgumentParser::Product" = {
+         isa = "PBXFileReference";
+         path = "ArgumentParser.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-argument-parser::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_460";
+         buildPhases = (
+            "OBJ_463"
+         );
+         dependencies = (
+         );
+         name = "swift-argument-parserPackageDescription";
+         productName = "swift-argument-parserPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-log::Logging" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_282";
+         buildPhases = (
+            "OBJ_285",
+            "OBJ_289"
+         );
+         dependencies = (
+         );
+         name = "Logging";
+         productName = "Logging";
+         productReference = "swift-log::Logging::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-log::Logging::Product" = {
+         isa = "PBXFileReference";
+         path = "Logging.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-log::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_466";
+         buildPhases = (
+            "OBJ_469"
+         );
+         dependencies = (
+         );
+         name = "swift-logPackageDescription";
+         productName = "swift-logPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::CNIOAtomics" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_235";
+         buildPhases = (
+            "OBJ_238",
+            "OBJ_241",
+            "OBJ_243"
+         );
+         dependencies = (
+         );
+         name = "CNIOAtomics";
+         productName = "CNIOAtomics";
+         productReference = "swift-nio::CNIOAtomics::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::CNIOAtomics::Product" = {
+         isa = "PBXFileReference";
+         path = "CNIOAtomics.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::CNIODarwin" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_245";
+         buildPhases = (
+            "OBJ_248",
+            "OBJ_250",
+            "OBJ_252"
+         );
+         dependencies = (
+         );
+         name = "CNIODarwin";
+         productName = "CNIODarwin";
+         productReference = "swift-nio::CNIODarwin::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::CNIODarwin::Product" = {
+         isa = "PBXFileReference";
+         path = "CNIODarwin.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::CNIOLinux" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_254";
+         buildPhases = (
+            "OBJ_257",
+            "OBJ_260",
+            "OBJ_263"
+         );
+         dependencies = (
+         );
+         name = "CNIOLinux";
+         productName = "CNIOLinux";
+         productReference = "swift-nio::CNIOLinux::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::CNIOLinux::Product" = {
+         isa = "PBXFileReference";
+         path = "CNIOLinux.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::CNIOSHA1" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_265";
+         buildPhases = (
+            "OBJ_268",
+            "OBJ_270",
+            "OBJ_272"
+         );
+         dependencies = (
+         );
+         name = "CNIOSHA1";
+         productName = "CNIOSHA1";
+         productReference = "swift-nio::CNIOSHA1::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::CNIOSHA1::Product" = {
+         isa = "PBXFileReference";
+         path = "CNIOSHA1.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::CNIOWindows" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_274";
+         buildPhases = (
+            "OBJ_277",
+            "OBJ_280"
+         );
+         dependencies = (
+         );
+         name = "CNIOWindows";
+         productName = "CNIOWindows";
+         productReference = "swift-nio::CNIOWindows::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::CNIOWindows::Product" = {
+         isa = "PBXFileReference";
+         path = "CNIOWindows.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::NIO" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_291";
+         buildPhases = (
+            "OBJ_294",
+            "OBJ_366"
+         );
+         dependencies = (
+            "OBJ_373",
+            "OBJ_374",
+            "OBJ_376",
+            "OBJ_377",
+            "OBJ_378",
+            "OBJ_379"
+         );
+         name = "NIO";
+         productName = "NIO";
+         productReference = "swift-nio::NIO::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::NIO::Product" = {
+         isa = "PBXFileReference";
+         path = "NIO.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::NIOConcurrencyHelpers" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_380";
+         buildPhases = (
+            "OBJ_383",
+            "OBJ_387"
+         );
+         dependencies = (
+            "OBJ_389"
+         );
+         name = "NIOConcurrencyHelpers";
+         productName = "NIOConcurrencyHelpers";
+         productReference = "swift-nio::NIOConcurrencyHelpers::Product";
+         productType = "com.apple.product-type.framework";
+      };
+      "swift-nio::NIOConcurrencyHelpers::Product" = {
+         isa = "PBXFileReference";
+         path = "NIOConcurrencyHelpers.framework";
+         sourceTree = "BUILT_PRODUCTS_DIR";
+      };
+      "swift-nio::SwiftPMPackageDescription" = {
+         isa = "PBXNativeTarget";
+         buildConfigurationList = "OBJ_472";
+         buildPhases = (
+            "OBJ_475"
+         );
+         dependencies = (
+         );
+         name = "swift-nioPackageDescription";
+         productName = "swift-nioPackageDescription";
+         productType = "com.apple.product-type.framework";
+      };
+   };
+   rootObject = "OBJ_1";
+}
