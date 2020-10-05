@@ -14,4 +14,3 @@ func logging(for options: ServerOptions) -> Logger {
     logger.log(level: options.logLevel, "logger initialized")
     return logger
 }
-

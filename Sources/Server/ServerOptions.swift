@@ -35,11 +35,17 @@ struct ServerOptions: ParsableCommand {
         help: ArgumentHelp("handle different pi convention", valueName: "device")
     )
     var program: String = "specialtopics"
-    
+
     @Option(
         name: .customLong("logLevel"),
         help: ArgumentHelp("log level: trace | debug | info | notice | warning | error | critical", valueName: "logLevel")
     )
     var logLevel: Logger.Level = .info
+
+    @Option(
+        name: .customLong("repeats"),
+        help: ArgumentHelp("repeats N", valueName: "repeats")
+    )
+    var repeats: Int = 1
 }
 
